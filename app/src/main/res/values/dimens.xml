@@ -4,4 +4,6 @@
     <dimen name="small_padding">16dp</dimen>
     <dimen name="medium_font_size">23sp</dimen>
     <dimen name="small_dimension">8dp</dimen>
+    <dimen name="grid_height">112dp</dimen>
+    <dimen name="xs_padding">8dp</dimen>
 </resources>
