@@ -4,4 +4,9 @@
     <dimen name="small_padding">16dp</dimen>
     <dimen name="medium_font_size">23sp</dimen>
     <dimen name="small_dimension">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="padding_30">10dp</dimen>
+    <dimen name="padding_top_35dp">35dp</dimen>
+    <dimen name="padding_top_15dp">10dp</dimen>
+
 </resources>
