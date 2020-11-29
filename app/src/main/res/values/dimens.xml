@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_width">128dp</dimen>
+    <dimen name="medium_width">138dp</dimen>
+    <dimen name="medium_size">23sp</dimen>
+    <dimen name="medium_padding">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="height">64dp</dimen>
+    <dimen name="medium_height">128dp</dimen>
+    <dimen name="default_dp">0dp</dimen>
+</resources>

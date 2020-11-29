@@ -1,4 +1,4 @@
-package com.example.happybirthday;
+package com.example.challenge1week2;
 
 import org.junit.Test;
 
