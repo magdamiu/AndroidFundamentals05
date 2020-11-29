@@ -4,4 +4,14 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="white">#ffffff</color>
+    <color name="orange">#fc987e</color>
+    <color name="weird_blue">#7bccc6</color>
+    <color name="black">#000000</color>
+    <color name="green">#cdedd7</color>
+    <color name="blue_button1">#7bccc6</color>
+    <color name="green_button2">#a2c99a</color>
+    <color name="mustard_color">#fbca59</color>
+    <color name="cyan">#79cbc5</color>
+    <color name="purple_color">#583d72</color>
+    <color name="pink">#cc0e74</color>
 </resources>
