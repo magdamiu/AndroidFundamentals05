@@ -17,4 +17,15 @@
     <string name="checkbox_state_checked">Checkbox checked</string>
     <string name="checkbox_state_unchecked">Checkbox unchecked</string>
     <string name="error_missing_text">Please add some text</string>
+    <string name="text_for_orange_square">This is an orange TextView</string>
+    <string name="green_text_view">This is a green TextView</string>
+    <string name="blue_text_view">This is a blue TextView</string>
+    <string name="button1_text">This is a button</string>
+    <string name="button2_text">This is a green button</string>
+    <string name="this_is_an_edittext">This is an EditText</string>
+    <string name="this_is_a_new_edittext">This is a new EditText</string>
+    <string name="notify_me_text">Notify me :)</string>
+    <string name="auto_backup_text">Auto backup</string>
+    <string name="check_no">NO</string>
+    <string name="check_yes">YES</string>
 </resources>
