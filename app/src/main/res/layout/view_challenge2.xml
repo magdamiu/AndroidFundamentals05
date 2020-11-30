@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:padding="@dimen/medium_padding"
+            android:text="@string/orange_text_view"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:gravity="center"
+            android:paddingTop="@dimen/medium_padding"
+            android:paddingBottom="@dimen/medium_padding"
+            android:text="@string/green_text_view"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_font_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:paddingTop="@dimen/medium_padding"
+            android:paddingBottom="@dimen/medium_padding"
+            android:text="@string/blue_text_view"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:onClick="BlueButtonOnClick"
+            android:padding="@dimen/small_padding"
+            android:text="@string/button" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_height"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:layout_weight="1"
+            android:contentDescription="@string/image_description"
+            android:gravity="center"
+            android:src="@drawable/palette" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:layout_weight="1"
+            android:background="@color/dark_green"
+            android:gravity="center"
+            android:onClick="GreenButtonClick"
+            android:paddingTop="@dimen/small_padding"
+            android:paddingBottom="@dimen/small_padding"
+            android:text="@string/green_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/firstEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:hint="@string/edit_text_first"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/secondEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:hint="@string/edit_text_second"
+            android:inputType="textCapWords" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:layout_weight="1"
+            android:buttonTint="@color/dark_grey"
+            android:text="@string/notify"
+            android:textSize="@dimen/medium_font_size" />
+
+        <Switch
+            android:id="@+id/switchID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:layout_weight="1"
+            android:text="@string/backup"
+            android:textSize="@dimen/small_font_size"
+            android:thumbTint="@color/dark_grey"
+            android:trackTint="@drawable/switch_track_tint"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/empty_view_height"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:numStars="5"
+            android:progressTint="@color/pink"
+            android:rating="4"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/empty_view_height"
+            android:background="@color/grey" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/dark_grey"
+                android:text="@string/yes"
+                android:textSize="@dimen/medium_font_size" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/dark_grey"
+                android:text="@string/no"
+                android:textSize="@dimen/medium_font_size" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
