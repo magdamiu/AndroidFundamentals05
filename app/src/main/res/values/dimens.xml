@@ -2,6 +2,12 @@
 <resources>
     <dimen name="small_margin">16dp</dimen>
     <dimen name="small_padding">16dp</dimen>
-    <dimen name="medium_font_size">23sp</dimen>
+    <dimen name="medium_font_size">24sp</dimen>
     <dimen name="small_dimension">8dp</dimen>
+    <dimen name="extra_small_margin">8dp</dimen>
+    <dimen name="image_height">104dp</dimen>
+    <dimen name="medium_margin">24dp</dimen>
+    <dimen name="small_font_size">16sp</dimen>
+    <dimen name="medium_padding">24dp</dimen>
+    <dimen name="empty_view_height">4dp</dimen>
 </resources>
