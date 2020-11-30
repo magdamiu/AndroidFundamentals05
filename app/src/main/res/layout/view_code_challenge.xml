@@ -116,7 +116,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/extra_small_1_dimens"
             android:background="@color/colorPrimary"/>
 
         <RatingBar
@@ -130,7 +130,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/extra_small_1_dimens"
             android:layout_marginBottom="@dimen/extra_small_margin"
             android:background="@color/colorPrimary"/>
 

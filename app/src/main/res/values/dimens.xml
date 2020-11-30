@@ -11,4 +11,5 @@
     <dimen name="small_font_size">16sp</dimen>
     <dimen name="extra_small_margin">8dp</dimen>
     <dimen name="large_padding">24dp</dimen>
+    <dimen name="extra_small_1_dimens">1dp</dimen>
 </resources>
