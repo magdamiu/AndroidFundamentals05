@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView oneTextView;
@@ -26,9 +28,23 @@ public class MainActivity extends AppCompatActivity {
         // seteaza layout-ul asociat activatii MainActivity
         // setContentView(R.layout.activity_main);
         // asociem views_sample_1 ca layout al activitatii MainActivity
-        setContentView(R.layout.views_sample_1);
 
-        oneTextView = findViewById(R.id.firstTextView);
+        //Code challenge 2
+        setContentView(R.layout.view_code_challenge);
+
+        //Code challenge 1
+        Random random = new Random();
+        try {
+            int number = random.nextInt(100);
+            if(number >= 10) {
+                throw new Exception(number + " is not a digit");
+            }
+        }
+        catch(Exception e) {
+            Logging.show(this, e.getMessage());
+        }
+
+        /*oneTextView = findViewById(R.id.firstTextView);
         oneTextView.setText(R.string.new_text);
 
         editTextUserFullName = findViewById(R.id.editTextFullName);
@@ -59,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         textViewPurpleContent = findViewById(R.id.textViewPurpleContent);
 
-        buttonGetContent = findViewById(R.id.buttonGetContent);
+        buttonGetContent = findViewById(R.id.buttonGetContent);*/
         // block comment/un-comment CTRL + Shift + /
         /*buttonGetContent.setOnClickListener(new View.OnClickListener() {
             @Override

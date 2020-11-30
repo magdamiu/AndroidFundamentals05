@@ -4,4 +4,11 @@
     <dimen name="small_padding">16dp</dimen>
     <dimen name="medium_font_size">23sp</dimen>
     <dimen name="small_dimension">8dp</dimen>
+    <dimen name="extra_small_padding">8dp</dimen>
+    <dimen name="height_1">136dp</dimen>
+    <dimen name="small_to_medium_text_size">20sp</dimen>
+    <dimen name="height_2">144dp</dimen>
+    <dimen name="small_font_size">16sp</dimen>
+    <dimen name="extra_small_margin">8dp</dimen>
+    <dimen name="large_padding">24dp</dimen>
 </resources>
