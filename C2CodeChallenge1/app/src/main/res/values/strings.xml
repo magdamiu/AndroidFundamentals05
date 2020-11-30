@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">C2CodeChallenge1</string>
+    <string name="orangeTextView">This is an orange TextView</string>
+    <string name="greenTextView">This is a green TextView</string>
+    <string name="blueTextView">This is a blue TextView</string>
+    <string name="blueButton">THIS IS A BUTTON</string>
+    <string name="firstEditText">This is an EditText</string>
+    <string name="secondEditText">This is a new EditText</string>
+    <string name="radioButtonYES">YES</string>
+    <string name="radioButtonNO">NO</string>
+    <string name="switchText">Auto backup</string>
+    <string name="checkBoxText">Notify me :)</string>
+</resources>
