@@ -38,8 +38,10 @@ public class MainActivity extends AppCompatActivity {
         // setContentView(R.layout.activity_main);
         // asociem views_sample_1 ca layout al activitatii MainActivity
 
+        //Course 3 - code challenge 2 screen 3
+        setContentView(R.layout.view_frame_layout);
         //Course 3 - code challenge 1
-        setContentView(R.layout.view_login);
+        /*setContentView(R.layout.view_login);
         editTextEmail  = findViewById(R.id.emailEditText);
         editTextPhone  = findViewById(R.id.phoneEditText);
         checkBoxTC     = findViewById(R.id.checkboxTC);
@@ -71,7 +73,9 @@ public class MainActivity extends AppCompatActivity {
                             + tcChecked.toString());
                 }
             }
-        });
+        });*/
+
+
         //Code challenge 2
         //setContentView(R.layout.view_code_challenge);
 
