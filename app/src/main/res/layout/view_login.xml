@@ -49,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/large_margin"
-        android:textSize="@dimen/small_font_size"
-        android:lineSpacingExtra="@dimen/small_padding"/>
+        android:lineSpacingExtra="@dimen/small_padding"
+        android:textSize="@dimen/small_font_size" />
 
 </LinearLayout>
