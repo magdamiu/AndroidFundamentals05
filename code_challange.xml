@@ -1,0 +1,198 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- sunt destul de sigur ca am hardcodat partea cu weight ul -->
+<!-- Nu inteleg de ce imi arata asa multe stele -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9">
+
+        <TextView
+            android:id="@+id/topLeftTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/pinky"
+            android:gravity="center_horizontal"
+            android:text="@string/top_left_text"
+            android:textColor="@color/white"></TextView>
+
+        <TextView
+            android:id="@+id/topMiddleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/light_green"
+            android:gravity="center_horizontal"
+            android:text="@string/top_middle_text"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/topRightTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ligt_blue"
+            android:gravity="center_horizontal"
+            android:text="@string/top_right_text"
+            android:textColor="@color/white"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9">
+
+        <Button
+            android:id="@+id/middleLeftButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/small_margin"
+            android:layout_weight="1"
+            android:backgroundTint="@color/darker_blue"
+            android:onClick="buttonGetContentOnClick"
+            android:padding="@dimen/small_margin"
+            android:text="@string/middle_left_button_text"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pallete_2"></ImageView>
+
+        <Button
+            android:id="@+id/middleRightButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/small_margin"
+            android:layout_weight="1"
+            android:backgroundTint="@color/darker_green"
+            android:onClick="buttonGetContentOnClick"
+            android:padding="@dimen/small_margin"
+            android:text="@string/middle_right_button_text"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:background="@color/yellowish"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/firstEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_large_margin"
+            android:layout_weight="1"
+            android:hint="@string/first_text_edit_text"
+            android:inputType="textCapWords"></EditText>
+
+        <EditText
+            android:id="@+id/secondEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_large_margin"
+            android:layout_weight="1"
+            android:hint="@string/second_text_edit_text"
+            android:inputType="textCapWords"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/text_edit_greenish"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@color/text_edit_greenish"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxNotifyMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/extra_large_margin"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/check_box_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_large_margin"
+                android:textStyle="bold"></CheckBox>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/extra_large_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_weight="1"
+                android:text="@string/switch_text"
+                android:textColor="@color/black"
+                android:textStyle="bold"></Switch>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thin_margin"
+            android:background="@color/gray"></View>
+
+        <RatingBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_edit_greenish"
+            android:numStars="5"
+            android:padding="@dimen/small_margin"
+            android:progressTint="@color/redish"
+            android:rating="2"
+            android:stepSize="1"></RatingBar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thin_margin"
+            android:background="@color/gray"></View>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_edit_greenish">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textStyle="bold"></RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ultra_extra_large_margin"
+                android:text="@string/no"
+                android:textStyle="bold">
+
+            </RadioButton>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</LinearLayout>
