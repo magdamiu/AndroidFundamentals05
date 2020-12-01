@@ -7,7 +7,7 @@
     <string name="our_first_textview">Our first TextView</string>
     <string name="i_am_a_button">I am a button</string>
     <string name="full_name">Full name</string>
-    <string name="a_accept_t_and_c">A accept T and C</string>
+    <string name="a_accept_t_and_c">I accept T and C</string>
     <string name="first_text">first text</string>
     <string name="second_text">second text</string>
     <string name="new_text">This is the new text</string>
@@ -28,4 +28,11 @@
     <string name="auto_backup">Auto backup</string>
     <string name="yes_capital_letters">YES</string>
     <string name="no_capital_letters">NO</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="i_accept_t_c"><![CDATA[I accept T&C]]></string>
+    <string name="submit">SUBMIT</string>
+    <string name="error_email_not_valid">Fill the input with a valid email address</string>
+    <string name="error_phone_not_valid">Fill the input with a valid phone number</string>
 </resources>
