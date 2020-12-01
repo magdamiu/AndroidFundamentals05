@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/large_dimension"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/orangeTextView"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            android:text="@string/this_is_an_orange_textview"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/greenTextView"
+            android:gravity="center"
+            android:text="@string/this_is_a_green_textview"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blueTextView"
+            android:gravity="center"
+            android:text="@string/this_is_a_blue_textview"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/large_dimension"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/small_margin"
+            android:background="@color/lightBlueButton"
+            android:text="@string/this_is_a_button" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/small_margin"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/paint" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/small_margin"
+            android:layout_weight="1"
+            android:background="@color/lightGreenButton"
+            android:text="@string/this_is_a_green_button" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightOrange"
+        android:textColor="@color/black"
+        android:textColorHint="@color/brownHintAccent"
+        android:hint="@string/this_is_an_edittext"
+        android:padding="@dimen/small_padding"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightOrange"
+        android:textColor="@color/black"
+        android:textColorHint="@color/brownHintAccent"
+        android:hint="@string/this_is_a_new_edittext"
+        android:padding="@dimen/small_padding"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tealMainBackgroundColor"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/notify_me"
+            android:buttonTint="@color/tealAccent"
+            android:textSize="16sp"/>
+
+        <Switch
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:checked="true"
+            android:trackTint="@color/tealAccent"
+            android:thumbTint="@color/white"
+            android:text="@string/auto_backup" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/tealMainBackgroundColor">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineViewHeight"
+            android:background="@color/lineViewColor"/>
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="4"
+            android:progressTint="@color/pink_accent"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineViewHeight"
+            android:background="@color/lineViewColor"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/tealAccent"
+                android:text="@string/yes" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/tealAccent"
+                android:text="@string/no" />
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
