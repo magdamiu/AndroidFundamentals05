@@ -1,20 +1,14 @@
 <resources>
-    <string name="app_name">AndroidFundamentalsGroup1</string>
-    <string name="yes">yes</string>
-    <string name="no">no</string>
-    <string name="wi_fi">Wi-fi</string>
-    <string name="search_for_names">Search for names</string>
-    <string name="our_first_textview">Our first TextView</string>
-    <string name="i_am_a_button">I am a button</string>
-    <string name="full_name">Full name</string>
-    <string name="a_accept_t_and_c">A accept T and C</string>
-    <string name="first_text">first text</string>
-    <string name="second_text">second text</string>
-    <string name="new_text">This is the new text</string>
-    <string name="default_full_name">Magda Miu</string>
-    <string name="checkbox_checked">Checkbox was checked</string>
-    <string name="checkbox_unchecked">Checkbox was unchecked</string>
-    <string name="checkbox_state_checked">Checkbox checked</string>
-    <string name="checkbox_state_unchecked">Checkbox unchecked</string>
-    <string name="error_missing_text">Please add some text</string>
+    <string name="app_name">W2CodeChallange</string>
+    <string name="notify_me">Notify me :)</string>
+    <string name="auto_backup">Auto backup</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="this_is_a_new_edittext">This is a new EditText</string>
+    <string name="this_is_an_edittext">This is an EditText</string>
+    <string name="this_is_a_green_button">this is a green button</string>
+    <string name="this_is_a_button">this is a button</string>
+    <string name="this_is_a_blue_textview">This is a blue TextView</string>
+    <string name="this_is_a_green_textview">This is a green TextView</string>
+    <string name="this_is_an_orange_textview">This is an orange TextView</string>
 </resources>
