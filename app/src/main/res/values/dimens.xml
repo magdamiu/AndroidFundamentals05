@@ -18,4 +18,7 @@
     <dimen name="medium_space">32dp</dimen>
     <dimen name="very_large_margin">40dp</dimen>
     <dimen name="extra_large_margin">64dp</dimen>
+    <dimen name="size_square">64dp</dimen>
+    <dimen name="margin_square_large">88dp</dimen>
+    <dimen name="margin_square_small">32dp</dimen>
 </resources>

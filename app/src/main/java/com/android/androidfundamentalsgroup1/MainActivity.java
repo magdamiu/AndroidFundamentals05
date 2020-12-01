@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextEmail;
     private EditText editTextPhone;
     private CheckBox checkBoxTC;
-    private Button   buttonSubmit;
+    private Button buttonSubmit;
     private TextView textViewSubmit;
 
     @Override
@@ -38,8 +38,12 @@ public class MainActivity extends AppCompatActivity {
         // setContentView(R.layout.activity_main);
         // asociem views_sample_1 ca layout al activitatii MainActivity
 
+        //Course 3 - code challenge 2 screen 1 & 2
+        setContentView(R.layout.view_scroll_layout);
+
         //Course 3 - code challenge 2 screen 3
-        setContentView(R.layout.view_frame_layout);
+        //setContentView(R.layout.view_frame_layout);
+
         //Course 3 - code challenge 1
         /*setContentView(R.layout.view_login);
         editTextEmail  = findViewById(R.id.emailEditText);
