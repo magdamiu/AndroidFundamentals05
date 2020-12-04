@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="medium_heigth">96dp</dimen>
-    <dimen name="small_layout_margin">8dp</dimen>
-    <dimen name="one_dp_small_view_separator">1dp</dimen>
-</resources>
