@@ -1,0 +1,10 @@
+com/example/tema4/BuildConfig.java
+ com.example.tema4.BuildConfig
+com/example/tema4/Student.java
+ com.example.tema4.Student
+com/example/tema4/StudentViewHolder.java
+ com.example.tema4.StudentViewHolder
+com/example/tema4/StudentAdapter.java
+ com.example.tema4.StudentAdapter
+com/example/tema4/MainActivity.java
+ com.example.tema4.MainActivity

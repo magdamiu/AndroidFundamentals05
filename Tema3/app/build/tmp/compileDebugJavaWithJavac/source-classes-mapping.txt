@@ -1,0 +1,4 @@
+com/example/tema3/BuildConfig.java
+ com.example.tema3.BuildConfig
+com/example/tema3/MainActivity.java
+ com.example.tema3.MainActivity
