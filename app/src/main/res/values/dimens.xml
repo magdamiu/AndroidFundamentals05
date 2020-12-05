@@ -8,4 +8,11 @@
     <dimen name="large_space">64dp</dimen>
     <dimen name="medium_space">32dp</dimen>
     <dimen name="extra_small_padding">4dp</dimen>
+    <dimen name="square_dim">60dp</dimen>
+    <dimen name="space_between_squares">90dp</dimen>
+    <dimen name="medium_margin">24dp</dimen>
+    <dimen name="big_margin">42dp</dimen>
+    <dimen name="bigger_rectangle_height">130dp</dimen>
+    <dimen name="medium_rectangle_height">75dp</dimen>
+    <dimen name="smaller_rectangle_height">40dp</dimen>
 </resources>
