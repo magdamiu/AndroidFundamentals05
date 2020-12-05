@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:text="@string/LOGIN"
+        android:textColor="#C56C50"
+        android:textSize="@dimen/medium_font_size"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_dimension"
+        android:layout_marginEnd="@dimen/small_dimension"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_dimension"
+        android:layout_marginEnd="@dimen/small_dimension"
+        android:hint="@string/phone"
+        android:inputType="phone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTermsAndConditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_dimension"
+        android:checked="true"
+        android:text="@string/i_accept_t_c" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_dimension"
+        android:layout_marginTop="@dimen/small_dimension"
+        android:layout_marginEnd="@dimen/small_dimension"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="submit"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+</LinearLayout>

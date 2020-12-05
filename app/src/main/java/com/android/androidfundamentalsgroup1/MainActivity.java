@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -38,9 +39,26 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private List<Email> emails;
 
+    private EditText editTextEmail;
+    private EditText editTextPhone;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+// Ex1
+//        setContentView(R.layout.code_challange_3_ex_1);
+//
+//        editTextEmail = findViewById(R.id.emailEditText);
+//        editTextPhone = findViewById(R.id.phoneEditText);
+//        checkBoxTermsAndConditions = findViewById(R.id.checkboxTermsAndConditions);
+
+// Ex2
+//        setContentView(R.layout.code_challange_3_ex_2_screen_1);
+//        setContentView(R.layout.code_challange_3_ex_2_screen_3);
+//        setContentView(R.layout.code_challange_3_ex_2_screen_4);
+//        setupSpinnerAdapter();
+
+
         // seteaza layout-ul asociat activatii MainActivity
         // setContentView(R.layout.activity_main);
         // asociem views_sample_1 ca layout al activitatii MainActivity
@@ -59,8 +77,38 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         // setupSpinnerAdapter();
 
         // run RecyclerView sample
-        setContentView(R.layout.views_sample_recycler_view);
-        displayEmailsList();
+        // setContentView(R.layout.views_sample_recycler_view);
+        //  displayEmailsList();
+    }
+
+    /* Function that checks if email and phone fields are completed (and valid) and checkbox is checked */
+    public void submit(View view) {
+        String phone = editTextPhone.getText().toString();
+        String email = editTextEmail.getText().toString();
+        checkBoxTermsAndConditions = findViewById(R.id.checkBoxTermsAndConditions);
+
+        boolean phoneValid = true;
+        boolean emailValid = true;
+        boolean checkBoxChecked = true;
+
+        if (phone.isEmpty()) {
+            editTextPhone.setError(getString(R.string.valid_phone_numer));
+            phoneValid = false;
+        }
+
+        if (email.isEmpty()) {
+            editTextEmail.setError(getString(R.string.valid_email_address));
+            emailValid = false;
+        }
+
+        if (!checkBoxTermsAndConditions.isChecked()) {
+            Toast.makeText(MainActivity.this, getString(R.string.check_box_agree), Toast.LENGTH_SHORT).show();
+            checkBoxChecked = false;
+        }
+
+        if (phoneValid && emailValid && checkBoxChecked) {
+            Toast.makeText(MainActivity.this, getString(R.string.welcome), Toast.LENGTH_LONG).show();
+        }
     }
 
     // RecyclerView implementation
@@ -184,7 +232,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int position, long itemId) {
         List<String> androidVersions = getSpinnerAndroidDataSource();
-        String selectedVersion = androidVersions.get(position);
+        String selectedVersion = "Selected: " + androidVersions.get(position);
         Toast.makeText(MainActivity.this, selectedVersion, Toast.LENGTH_LONG).show();
     }
 
