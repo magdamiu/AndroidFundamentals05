@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,15 +10,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="pink_accent">#FB3F7E</color>
-    <color name="lightBlueButton">#79CBC5</color>
-    <color name="lightGreenButton">#677663</color>
-    <color name="orangeTextView">#FA9779</color>
-    <color name="greenTextView">#CCEED6</color>
-    <color name="blueTextView">#7CCAC4</color>
-    <color name="lightOrange">#FCCA59</color>
-    <color name="brownHintAccent">#997D35</color>
-    <color name="tealMainBackgroundColor">#79CBC5</color>
-    <color name="tealAccent">#5B9791</color>
-    <color name="lineViewColor">#6A94AD</color>
+    <color name="pink_coral">#FD987A</color>
+    <color name="blue_marine">#4054B2</color>
+    <color name="orange_yellow">#FCCA59</color>
+    <color name="very_light_blue">#CCEED6</color>
+    <color name="light_blue">#79CBC5</color>
+    <color name="outer_layer">#9C27B0</color>
+    <color name="middle_layer">#79CBC5</color>
+    <color name="inner_layer">#FCCA59</color>
 </resources>

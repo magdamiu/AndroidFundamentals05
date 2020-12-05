@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/small_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_space">
+
+            <TextView
+                android:id="@+id/box1"
+                android:layout_width="@dimen/large_space"
+                android:layout_height="match_parent"
+                android:background="@color/orange_yellow" />
+
+            <TextView
+                android:id="@+id/box2"
+                android:layout_width="@dimen/llarge_space"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_toEndOf="@id/box1" />
+
+            <TextView
+                android:id="@+id/box3"
+                android:layout_width="@dimen/large_space"
+                android:layout_height="match_parent"
+                android:background="@color/very_light_blue"
+                android:layout_toEndOf="@id/box2" />
+
+            <TextView
+                android:id="@+id/box4"
+                android:layout_width="@dimen/large_space"
+                android:layout_height="match_parent"
+                android:background="@color/light_blue"
+                android:layout_toEndOf="@id/box3" />
+
+            <TextView
+                android:id="@+id/box5"
+                android:layout_width="@dimen/medium_space"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_toEndOf="@id/box4" />
+
+            <TextView
+                android:id="@+id/box6"
+                android:layout_width="@dimen/large_space"
+                android:layout_height="match_parent"
+                android:background="@color/pink_coral"
+                android:layout_toEndOf="@id/box5" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollview_text"
+            android:layout_marginTop="@dimen/small_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollview_text"
+            android:layout_marginTop="@dimen/small_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollview_text"
+            android:layout_marginTop="@dimen/small_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollview_text"
+            android:layout_marginTop="@dimen/small_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollview_text"
+            android:layout_marginTop="@dimen/small_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollview_text"
+            android:layout_marginTop="@dimen/small_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollview_text"
+            android:layout_marginTop="@dimen/small_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollview_text"
+            android:layout_marginTop="@dimen/small_margin"/>
+
+    </LinearLayout>
+</ScrollView>
