@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="small_margin">16dp</dimen>
+    <dimen name="medium_margin">24dp</dimen>
+    <dimen name="extra_small_padding">4dp</dimen>
     <dimen name="small_padding">16dp</dimen>
     <dimen name="medium_font_size">23sp</dimen>
     <dimen name="small_dimension">8dp</dimen>
     <dimen name="extra_large_space">128dp</dimen>
     <dimen name="large_space">64dp</dimen>
     <dimen name="medium_space">32dp</dimen>
-    <dimen name="extra_small_padding">4dp</dimen>
+    <dimen name="llarge_space">96dp</dimen>
+    <dimen name="large_margin">32dp</dimen>
+    <dimen name="x_large_margin">64dp</dimen>
 </resources>
