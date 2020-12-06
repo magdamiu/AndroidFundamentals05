@@ -51,9 +51,9 @@
         android:id="@+id/buttonGetContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="buttonGetContentOnClick"
         android:layout_margin="@dimen/small_margin"
         android:background="@color/colorAccent"
+        android:onClick="buttonGetContentOnClick"
         android:padding="@dimen/small_padding"
         android:text="@string/i_am_a_button"
         android:textColor="@color/white"
@@ -107,7 +107,8 @@
         android:checked="true"
         android:text="@string/wi_fi" />
 
-    <SeekBar android:id="@+id/seekBarChallenges"
+    <SeekBar
+        android:id="@+id/seekBarChallenges"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="10"

@@ -1,21 +1,32 @@
 package com.android.androidfundamentalsgroup1;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.SeekBar;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 import java.util.Random;
 import java.util.regex.Pattern;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     /*private TextView oneTextView;
     private EditText editTextUserFullName;
@@ -30,20 +41,11 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox checkBoxTC;
     private Button buttonSubmit;
     private TextView textViewSubmit;
+    private Spinner spinnerAndroidVersions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // seteaza layout-ul asociat activatii MainActivity
-        // setContentView(R.layout.activity_main);
-        // asociem views_sample_1 ca layout al activitatii MainActivity
-
-        //Course 3 - code challenge 2 screen 1 & 2
-        setContentView(R.layout.view_scroll_layout);
-
-        //Course 3 - code challenge 2 screen 3
-        //setContentView(R.layout.view_frame_layout);
-
         //Course 3 - code challenge 1
         /*setContentView(R.layout.view_login);
         editTextEmail  = findViewById(R.id.emailEditText);
@@ -79,7 +81,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
+        //Course 3 - code challenge 2 screen 1 & 2
+        //setContentView(R.layout.view_scroll_layout);
 
+        //Course 3 - code challenge 2 screen 3
+        //setContentView(R.layout.view_frame_layout);
+
+        //Course 3 - code challenge 2 screen 4 & 5
+        setContentView(R.layout.view_spinner);
+        setSpinnerAndroidVersionsAdapter();
         //Code challenge 2
         //setContentView(R.layout.view_code_challenge);
 
@@ -169,6 +179,39 @@ public class MainActivity extends AppCompatActivity {
         } else {
             return Patterns.PHONE.matcher(phone).matches();
         }
+    }
+
+    private List<String> getSpinnerAndroidVersionsDataSource() {
+        List<String> androidVersions = new ArrayList<>();
+        androidVersions.add("Cupcake");
+        androidVersions.add("Donut");
+        androidVersions.add("Eclair");
+        androidVersions.add("KitKat");
+        androidVersions.add("Pie");
+        return androidVersions;
+    }
+
+    private ArrayAdapter<String> getSpinnerAndroidVersionsAdapter() {
+        //Attention: the layout is simple_spinner_item
+        return new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
+                getSpinnerAndroidVersionsDataSource());
+    }
+
+    private void setSpinnerAndroidVersionsAdapter() {
+        spinnerAndroidVersions = findViewById(R.id.spinnerAndroidVersions);
+        spinnerAndroidVersions.setAdapter(getSpinnerAndroidVersionsAdapter());
+        spinnerAndroidVersions.setOnItemSelectedListener(this);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int pos, long l) {
+        List<String> androidVersions = getSpinnerAndroidVersionsDataSource();
+        String selectedVersion = androidVersions.get(pos); //take the selected element
+        Toast.makeText(MainActivity.this, selectedVersion, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
 }
