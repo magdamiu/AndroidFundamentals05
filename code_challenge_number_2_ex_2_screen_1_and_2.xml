@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/blocksLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/block_height"
+        android:layout_margin="@dimen/large_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/firstTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/darker_green"></TextView>
+
+        <TextView
+            android:id="@+id/secondTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"></TextView>
+
+        <TextView
+            android:id="@+id/thirdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/redish"></TextView>
+
+        <TextView
+            android:id="@+id/fourthTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/pinky"></TextView>
+
+        <TextView
+            android:id="@+id/fifthTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/purple_500"></TextView>
+
+        <TextView
+            android:id="@+id/sixthTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/purple_200"></TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blocksLayout"
+        android:layout_margin="@dimen/large_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/firstParaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/big_chunky_paragraph"></TextView>
+
+            <TextView
+                android:id="@+id/secondParaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstParaTextView"
+                android:layout_marginTop="@dimen/large_large_margin"
+                android:text="@string/big_chunky_paragraph"></TextView>
+
+            <TextView
+                android:id="@+id/thirdParaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondParaTextView"
+                android:layout_marginTop="@dimen/large_large_margin"
+                android:text="@string/big_chunky_paragraph"></TextView>
+
+            <TextView
+                android:id="@+id/fourthParaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thirdParaTextView"
+                android:layout_marginTop="@dimen/large_large_margin"
+                android:text="@string/big_chunky_paragraph"></TextView>
+
+            <TextView
+                android:id="@+id/fifthParaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fourthParaTextView"
+                android:layout_marginTop="@dimen/large_large_margin"
+                android:text="@string/big_chunky_paragraph"></TextView>
+
+            <TextView
+                android:id="@+id/sixthParaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fifthParaTextView"
+                android:layout_marginTop="@dimen/large_large_margin"
+                android:text="@string/big_chunky_paragraph"></TextView>
+
+            <TextView
+                android:id="@+id/seventhParaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sixthParaTextView"
+                android:layout_marginTop="129dp"
+                android:text="@string/big_chunky_paragraph"></TextView>
+
+            <TextView
+                android:id="@+id/eighthParaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seventhParaTextView"
+                android:layout_marginTop="@dimen/large_large_margin"
+                android:text="@string/big_chunky_paragraph"></TextView>
+
+            <TextView
+                android:id="@+id/ninthParaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eighthParaTextView"
+                android:layout_marginTop="@dimen/large_large_margin"
+                android:text="@string/big_chunky_paragraph"></TextView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

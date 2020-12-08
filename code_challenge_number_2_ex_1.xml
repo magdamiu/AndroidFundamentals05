@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/loginTextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="@string/loginTextLabel"
+        android:textColor="@color/pinky"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/emailTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:hint="@string/email_text_edit_hint"
+        android:inputType="textCapWords"></EditText>
+
+    <EditText
+        android:id="@+id/phoneTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:hint="@string/phone_text_edit_hint"
+        android:inputType="textCapWords"></EditText>
+
+    <CheckBox
+        android:id="@+id/termsAndConditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:checked="false"
+        android:text="@string/terms_and_conditions_check_box"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_large_margin"></CheckBox>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:backgroundTint="@color/darker_blue"
+        android:onClick="buttonGetContentOnClick"
+        android:padding="@dimen/small_margin"
+        android:text="@string/submit_button_text"
+        android:textColor="@color/white" />
+
+</LinearLayout>
