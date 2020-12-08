@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="standard_size">20sp</dimen>
-    <dimen name="text_padding">20sp</dimen>
-    <dimen name="button_margin">5dp</dimen>
-    <dimen name="edit_text_padding">20dp</dimen>
-    <dimen name="layout_padding">120dp</dimen>
-    <dimen name="layout_margin">7dp</dimen>
-</resources>
