@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/orangeSquare"
+                android:layout_width="@dimen/extra_large_spacing"
+                android:layout_height="@dimen/extra_large_spacing"
+                android:background="@color/orange" />
+
+            <View
+                android:id="@+id/darkOrangeSquare"
+                android:layout_width="@dimen/extra_large_spacing"
+                android:layout_height="@dimen/extra_large_spacing"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:background="@color/dark_orange" />
+
+            <View
+                android:id="@+id/darkGreenSquare"
+                android:layout_width="@dimen/extra_large_spacing"
+                android:layout_height="@dimen/extra_large_spacing"
+                android:layout_toLeftOf="@id/darkOrangeSquare"
+                android:background="@color/dark_green" />
+
+            <View
+                android:id="@+id/greenSquare"
+                android:layout_width="@dimen/extra_large_spacing"
+                android:layout_height="@dimen/extra_large_spacing"
+                android:layout_toLeftOf="@id/darkGreenSquare"
+                android:background="@color/green" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:text="@string/long_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:text="@string/long_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:text="@string/long_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:text="@string/long_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:text="@string/long_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/extra_small_margin"
+            android:text="@string/long_text" />
+
+    </LinearLayout>
+</ScrollView>
