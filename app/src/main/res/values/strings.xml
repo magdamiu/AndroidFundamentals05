@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AndroidFundamentalsGroup1</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="i_accept_t_amp_c"><![CDATA[I accept T&C]]></string>
+    <string name="submit">Submit</string>
+    <string name="invalid_email">Fill the input with a valid email address</string>
 </resources>
