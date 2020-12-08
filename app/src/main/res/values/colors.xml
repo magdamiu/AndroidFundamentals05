@@ -14,4 +14,9 @@
     <color name="classic_blue">#7BCCC6</color>
     <color name="violet">#981CEB</color>
     <color name="aqua">#03DAC5</color>
+    <color name="cream_colored">#FFF9CF</color>
+    <color name="raw_green">#9BF99C</color>
+    <color name="forest_green">#128477</color>
+    <color name="magenta">#D62261</color>
+    <color name="gray">#EBE6E6</color>
 </resources>

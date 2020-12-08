@@ -3,6 +3,8 @@ package com.android.androidfundamentalsgroup1;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Patterns;
@@ -13,6 +15,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -43,9 +46,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private TextView textViewSubmit;
     private Spinner spinnerAndroidVersions;
 
+    //course4: code challenge
+    private List<Student> students;
+    private RecyclerView recyclerViewStudents;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Course 4 - code challenge 2
+        //Create a recycler view that contains a list of students
+        setContentView(R.layout.view_students_recycler_view);
+        displayStudentsList();
+        //Course 4 - code challenge 1
+        //setContentView(R.layout.view_andoid_logo_frame_layout);
         //Course 3 - code challenge 1
         /*setContentView(R.layout.view_login);
         editTextEmail  = findViewById(R.id.emailEditText);
@@ -88,8 +102,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         //setContentView(R.layout.view_frame_layout);
 
         //Course 3 - code challenge 2 screen 4 & 5
-        setContentView(R.layout.view_spinner);
-        setSpinnerAndroidVersionsAdapter();
+        /*setContentView(R.layout.view_spinner);
+        setSpinnerAndroidVersionsAdapter();*/
+
         //Code challenge 2
         //setContentView(R.layout.view_code_challenge);
 
@@ -214,4 +229,29 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
+
+
+    private List<Student> dataSourceStudents() {
+        students = new ArrayList<>();
+        for (int i = 0; i < 15; i++) {
+            students.add(new Student(i, "FirstName " + i, "LastName " + i));
+        }
+        return students;
+    }
+
+    private void setStudentsLayoutManager() {
+        recyclerViewStudents = findViewById(R.id.recyclerViewStudents);
+        recyclerViewStudents.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+    }
+
+    private void setStudentsAdapter() {
+        recyclerViewStudents.setAdapter(new StudentAdapter(students, MainActivity.this));
+    }
+
+    private void displayStudentsList() {
+        dataSourceStudents();
+        setStudentsLayoutManager();
+        setStudentsAdapter();
+    }
+
 }

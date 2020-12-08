@@ -21,4 +21,10 @@
     <dimen name="size_square">64dp</dimen>
     <dimen name="margin_square_large">88dp</dimen>
     <dimen name="margin_square_small">32dp</dimen>
+    <dimen name="width_image_top">160dp</dimen>
+    <dimen name="height_image_top">160dp</dimen>
+    <dimen name="extra_small_2_dimens">2dp</dimen>
+    <dimen name="double_large_margin">36dp</dimen>
+    <dimen name="larger_margin">52dp</dimen>
+    <dimen name="more_than_larger_margin">68dp</dimen>
 </resources>
