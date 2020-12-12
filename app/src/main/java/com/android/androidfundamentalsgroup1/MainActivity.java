@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -39,6 +38,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private RecyclerView recyclerViewEmails;
 
     private List<Email> emails;
+    private List<Student> students;
+    private RecyclerView recyclerViewStudents;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,13 +65,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         // setContentView(R.layout.views_sample_recycler_view);
         // displayEmailsList();
 
-        setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_main);
 
-        Logging.show(TAG, "onCreate");
+//        Logging.show(TAG, "onCreate");
 
-        int result = sum(10, 5, 4);
-        Logging.show("MainActivity result = ", result + "");
-        result++;
+//        int result = sum(10, 5, 4);
+//        Logging.show("MainActivity result = ", result + "");
+//        result++;
+
+//        ex 1
+//        setContentView(R.layout.code_challange_4_ex_1);
+
+//        ex2
+//        setContentView(R.layout.code_challange_4_ex_2);
+//        displayStudents();
+
+//        ex 3
+        setContentView(R.layout.code_challange_4_ex_3);
+
     }
 
     @Override
@@ -100,6 +112,31 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private int sum(int a, int b, int c) {
         int result = a / b;
         return result + c;
+    }
+
+    // set students data source
+    private void studentDataSource() {
+        students = new ArrayList<>();
+        for(int i = 0 ; i < 20 ; i++) {
+            students.add(new Student(i, "FirstName " + i , "LastName " + i));
+        }
+    }
+
+    // set students layout manager
+    private void setStudentsLayoutManager() {
+        recyclerViewStudents = findViewById(R.id.recyclerViewStudents);
+        recyclerViewStudents.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+    }
+
+    // set adapter for the students
+    private void setStudentsAdapter() {
+        recyclerViewStudents.setAdapter(new StudentAdapter(students, MainActivity.this));
+    }
+
+    private void displayStudents() {
+        studentDataSource();
+        setStudentsLayoutManager();
+        setStudentsAdapter();
     }
 
     // RecyclerView implementation
