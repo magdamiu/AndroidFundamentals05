@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -25,6 +26,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private final String ANDROID_DOCS = "https://developer.android.com/";
+    private final String TAG = "MainActivity";
 
     private TextView oneTextView;
     private EditText editTextUserFullName;
@@ -59,8 +61,45 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         // setupSpinnerAdapter();
 
         // run RecyclerView sample
-        setContentView(R.layout.views_sample_recycler_view);
-        displayEmailsList();
+        // setContentView(R.layout.views_sample_recycler_view);
+        // displayEmailsList();
+
+        setContentView(R.layout.activity_main);
+
+        Logging.show(TAG, "onCreate");
+
+        int result = sum(10, 5, 4);
+        Logging.show("MainActivity result = ", result + "");
+        result++;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Logging.show(TAG, "onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Logging.show(TAG, "onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Logging.show(TAG, "onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Logging.show(TAG, "onStop");
+    }
+
+    private int sum(int a, int b, int c) {
+        int result = a / b;
+        return result + c;
     }
 
     // RecyclerView implementation
@@ -74,6 +113,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
     }
 
+    // step 4 = Define the LayoutManager in activity
     // set the layout manager, in our case LinearLayoutManager because it's a list of emails
     private void setEmailsLayoutManager() {
         recyclerViewEmails = findViewById(R.id.recyclerViewEmails);
@@ -85,8 +125,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     private void displayEmailsList() {
+        // data source - checked
         inbox();
+
+        // layout manager - checked
         setEmailsLayoutManager();
+
+        // adapter - checked
         setEmailsAdapter();
     }
 
@@ -190,5 +235,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
+    }
+
+    public void buttonOpenSecondActivityOnClick(View view) {
+        Intent secondActivity = new Intent(MainActivity.this, SecondActivity.class);
+        startActivity(secondActivity);
     }
 }
