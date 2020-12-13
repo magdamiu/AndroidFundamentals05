@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android Developer Fundamentals</string>
+    <string name="from_roberta">From Roberta</string>
+    <string name="happy_holidays">Happy Holidays!</string>
+    <string name="merry_christmas">Have yourself a merry little Christmas</string>
+    <string name="let_your_heart_be_light">Let your heart be light</string>
+    <string name="problems_out_of_sight">From now on, our problems will be out of sight</string>
+    <string name="let_it_snow">Let it snow</string>
+    <string name="jingle_bells">Jingle Bells</string>
+</resources>

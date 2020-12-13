@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin">16dp</dimen>
+    <dimen name="medium_margin">20dp</dimen>
+    <dimen name="large_margin">32dp</dimen>
+    <dimen name="medium_top_margin">164dp</dimen>
+    <dimen name="large_top_margin">176dp</dimen>
+    <dimen name="extra_small_top_margin">12dp</dimen>
+    <dimen name="small_top_margin">16dp</dimen>
+    <dimen name="really_small_top_margin">4dp</dimen>
+    <dimen name="about_really_small_margin">8dp</dimen>
+    <dimen name="extra_large_top_margin">240dp</dimen>
+    <dimen name="medium_height">284dp</dimen>
+    <dimen name="small_height">184dp</dimen>
+    <dimen name="small_width">115dp</dimen>
+</resources>
