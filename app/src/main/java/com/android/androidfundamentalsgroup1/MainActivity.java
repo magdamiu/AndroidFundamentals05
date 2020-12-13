@@ -54,12 +54,17 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Course 4 - code challenge 3
+        setContentView(R.layout.view_christmas_constraint_layout);
+
         //Course 4 - code challenge 2
         //Create a recycler view that contains a list of students
-        setContentView(R.layout.view_students_recycler_view);
-        displayStudentsList();
+        /*setContentView(R.layout.view_students_recycler_view);
+        displayStudentsList();*/
+
         //Course 4 - code challenge 1
         //setContentView(R.layout.view_andoid_logo_frame_layout);
+
         //Course 3 - code challenge 1
         /*setContentView(R.layout.view_login);
         editTextEmail  = findViewById(R.id.emailEditText);
