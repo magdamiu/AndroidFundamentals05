@@ -1,38 +1,48 @@
 package com.android.androidfundamentalsgroup1;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.util.Patterns;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.EditText;
-import android.widget.SeekBar;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
-    private EditText emailInput;
-    private EditText phoneInput;
+    private List<Student> students;
+    private RecyclerView recyclerViewStudents;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_view);
+        setContentView(R.layout.student_view);
+        displayStudentsList();
     }
 
-    public void buttonSubmitOnClick(View view){
-        emailInput = findViewById(R.id.emailInput);
-        phoneInput = findViewById(R.id.phoneInput);
+    private void getStudentsData(){
+        students = new ArrayList<>();
+        Student newStudent;
 
-        String emailInputContent = emailInput.getText().toString();
-        String phoneInputContent = phoneInput.getText().toString();
-
-        if(!Patterns.EMAIL_ADDRESS.matcher(emailInputContent).matches()) {
-            emailInput.setError(getString(R.string.invalid_email));
+        for (int i = 0; i < 25; i++) {
+            newStudent = new Student("FirstName " + i, "LastName " + i);
+            students.add(newStudent);
         }
     }
+
+    private void setStudentsLayoutManager() {
+        recyclerViewStudents = findViewById(R.id.recyclerViewStudents);
+        recyclerViewStudents.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    private void setStudentsAdapter() {
+        recyclerViewStudents.setAdapter(new StudentAdapter(students, this));
+    }
+
+    private void displayStudentsList() {
+        getStudentsData();
+        setStudentsLayoutManager();
+        setStudentsAdapter();
+    }
+
 }
