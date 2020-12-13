@@ -27,4 +27,6 @@
     <dimen name="double_large_margin">36dp</dimen>
     <dimen name="larger_margin">52dp</dimen>
     <dimen name="more_than_larger_margin">68dp</dimen>
+    <dimen name="height_sparkling_poster">200dp</dimen>
+    <dimen name="plus_large_margin">32dp</dimen>
 </resources>
