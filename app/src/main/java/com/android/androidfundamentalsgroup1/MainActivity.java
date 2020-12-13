@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.util.Patterns;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -23,17 +23,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private final String ANDROID_DOCS = "https://developer.android.com/";
-
-    private Button buttonSubmit;
-    private EditText email;
-    private EditText phone;
-    private CheckBox tAndC;
-    private String loginContent = "";
-
+    private final String TAG = "MainActivity";
 
     private TextView oneTextView;
     private EditText editTextUserFullName;
@@ -68,68 +61,46 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         // setupSpinnerAdapter();
 
         // run RecyclerView sample
-//        setContentView(R.layout.views_sample_recycler_view);
-//        displayEmailsList();
+        // setContentView(R.layout.views_sample_recycler_view);
+        // displayEmailsList();
 
-        /////////////HOMEWORK
+        setContentView(R.layout.activity_main);
 
-        //view_group_challenge_1
-        //setContentView(R.layout.view_group_challenge_1);
-        //displayInfos();
+        Logging.show(TAG, "onCreate");
 
-        //view_group_challenge_2.1
-        //setContentView(R.layout.view_group_challenge_2_screen_1);
-
-        //view_group_challenge_2.2
-        //setContentView(R.layout.view_group_challenge_2_screen_2);
-
-        //view_group_challenge_2.3
-        setContentView(R.layout.view_group_challenge_2_screen_3);
-        setupSpinnerAdapter();
+        int result = sum(10, 5, 4);
+        Logging.show("MainActivity result = ", result + "");
+        result++;
     }
 
-    private void displayInfos() {
-
-        email = findViewById(R.id.email_edit_text);
-        phone = findViewById(R.id.phone_edit_text);
-        tAndC = findViewById(R.id.t_c_check_box);
-
-        buttonSubmit = findViewById(R.id.submit);
-        buttonSubmit.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-
-                String emailContent = email.getText().toString();
-                String phoneContent = phone.getText().toString();
-
-                if (!emailContent.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(emailContent).matches()) {
-                    email.setError(null);
-                    loginContent += emailContent + "\n";
-                    if (!phoneContent.isEmpty() && Patterns.PHONE.matcher(phoneContent).matches()) {
-                        phone.setError(null);
-                        loginContent += phoneContent + "\n";
-                        if (tAndC.isChecked()) {
-                            tAndC.setError(null);
-                            loginContent += "T and C checked";
-                            Toast.makeText(MainActivity.this, loginContent, Toast.LENGTH_LONG).show();
-                            loginContent = "";
-                        } else {
-                            tAndC.setError("T and C is not checked");
-                            loginContent = "";
-                        }
-                    } else {
-                        phone.setError("Fill the input with a valid phone");
-                        loginContent = "";
-                    }
-                } else {
-                    email.setError("Fill the input with a valid email address");
-                    loginContent = "";
-                }
-            }
-        });
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Logging.show(TAG, "onStart");
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Logging.show(TAG, "onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Logging.show(TAG, "onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Logging.show(TAG, "onStop");
+    }
+
+    private int sum(int a, int b, int c) {
+        int result = a / b;
+        return result + c;
+    }
 
     // RecyclerView implementation
     // get data source
@@ -138,10 +109,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Email email = null;
         for (int i = 0; i < 25; i++) {
             email = new Email(0, "Magda " + i, "Hello Android " + i, "This is an intro about Android");
-            //emails.add(email);
+            emails.add(email);
         }
     }
 
+    // step 4 = Define the LayoutManager in activity
     // set the layout manager, in our case LinearLayoutManager because it's a list of emails
     private void setEmailsLayoutManager() {
         recyclerViewEmails = findViewById(R.id.recyclerViewEmails);
@@ -149,12 +121,17 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     private void setEmailsAdapter() {
-        //recyclerViewEmails.setAdapter(new EmailAdapter(this, emails));
+        recyclerViewEmails.setAdapter(new EmailAdapter(this, emails));
     }
 
     private void displayEmailsList() {
+        // data source - checked
         inbox();
+
+        // layout manager - checked
         setEmailsLayoutManager();
+
+        // adapter - checked
         setEmailsAdapter();
     }
 
@@ -258,5 +235,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
+    }
+
+    public void buttonOpenSecondActivityOnClick(View view) {
+        Intent secondActivity = new Intent(MainActivity.this, SecondActivity.class);
+        startActivity(secondActivity);
     }
 }

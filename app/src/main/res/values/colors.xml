@@ -4,15 +4,12 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="white">#ffffff</color>
-    <color name="big_text_view_size">#9B2FAE</color>
-    <color name="medium_text_view_size">#7CCBC5</color>
-    <color name="small_text_view_size">#FBC962</color>
-    <color name="login_text_color">#FD9F82</color>
-    <color name="submit_color">#3F51B5</color>
-    <color name="submit_text_color">#F3F4FA</color>
-    <color name="first_text_view_color">#FCCA59</color>
-    <color name="second_text_view_color">#CCEED6</color>
-    <color name="third_text_view_color">#79CBC5</color>
-    <color name="last_text_view_color">#FD987A</color>
-    <color name="big_text_view_size">#9B2FAE</color>
+    <color name="first_part_background">#FEF9CF</color>
+    <color name="line_color">#11837A</color>
+    <color name="first_frame_background">#9CF89C</color>
+    <color name="second_frame_background">#11837A</color>
+    <color name="third_frame_background">#D52261</color>
+    <color name="forth_frame_background">#FEF9CF</color>
+    <color name="happy_holidays_color">#000000</color>
+    <color name="from_color">#4D4D51</color>
 </resources>
