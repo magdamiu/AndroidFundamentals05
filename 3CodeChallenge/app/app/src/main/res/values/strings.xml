@@ -9,4 +9,12 @@
     <string name="spinner_example">Spinner Example</string>
     <string name="next_view">Next View</string>
     <string name="submit_error">Fill the input with a valid email adress</string>
+    <string name="first_name">FirstName</string>
+    <string name="last_name">LastName</string>
+    <string name="christmas_message">"Have yourself a merry little Christmas,\nLet your heart be light\nFrom now on, our troubles will be out of sight"</string>
+    <string name="happy_holidays">Happy Holidays!</string>
+    <string name="from_gabi">From Gabi</string>
+    <string name="let_it_snow">LET IT SNOW</string>
+    <string name="gingles_bells">GINGLES BELLS</string>
+    <string name="todo">TODO</string>
 </resources>

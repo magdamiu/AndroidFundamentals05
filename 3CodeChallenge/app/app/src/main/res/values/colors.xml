@@ -16,4 +16,10 @@
     <color name="light_purple">#fc94be</color>
     <color name="green">#30f926</color>
     <color name="light_green">#c2ff5f</color>
+    <color name="strange_blue">#009688</color>
+    <color name="green_erased">#4CAF50</color>
+    <color name="dark_green">#081B0A</color>
+    <color name="extra_light_yellow">#FFFFA1</color>
+    <color name="pink">#E91E63</color>
+    <color name="rose_pink">#E91E63</color>
 </resources>
