@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Homework4</string>
+    <string name="title_text">ViewGroups Example</string>
+    <string name="first_name_text">FirstName</string>
+    <string name="last_name_text">LastName</string>
+    <string name="from_text">From Raluca</string>
+    <string name="wish_text">Happy Holidays!</string>
+    <string name="first_paragraph">Have yourself a merry little Christmas,</string>
+    <string name="second_paragraph">Let your heart be light</string>
+    <string name="third_paragraph">From now on, our troubles will be out of sight</string>
+    <string name="first_button_text">LET IT SNOW</string>
+    <string name="second_button_text">GINGLES BELLS</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/latte"
+            android:src="@drawable/first_image" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/first_text_view_size"
+            android:layout_gravity="fill"
+            android:background="@color/bright_green" />
+
+        <TextView
+            android:layout_width="@dimen/second_text_view_width"
+            android:layout_height="@dimen/second_text_view_height"
+            android:layout_gravity="center"
+            android:background="@color/dirty_green" />
+
+        <TextView
+            android:layout_width="@dimen/third_text_view_size"
+            android:layout_height="@dimen/third_text_view_height"
+            android:layout_gravity="center"
+            android:background="@color/pink" />
+
+        <ImageView
+            android:layout_width="@dimen/image_view_width"
+            android:layout_height="@dimen/image_view_height"
+            android:layout_gravity="center"
+            android:background="@color/latte"
+            android:src="@drawable/android_center" />
+
+
+    </FrameLayout>
+
+</FrameLayout>
