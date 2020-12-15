@@ -6,4 +6,9 @@
     <string name="i_accept_t_amp_c"><![CDATA[I accept T&C]]></string>
     <string name="submit">Submit</string>
     <string name="invalid_email">Fill the input with a valid email address</string>
+    <string name="happy_holidays">Happy Holidays!</string>
+    <string name="from_gelu">From Gelu</string>
+    <string name="have_yourself_a_merry_little_christmas_let_you_heard_be_light_from_now_on_our_troubles_will_be_out_of_sight">Have yourself a merry little Christmas,\nLet you heard be light,\nFrom now on, our troubles will be out of sight</string>
+    <string name="let_it_snow">Let it snow!</string>
+    <string name="jingle_bells">Jingle Bells</string>
 </resources>
