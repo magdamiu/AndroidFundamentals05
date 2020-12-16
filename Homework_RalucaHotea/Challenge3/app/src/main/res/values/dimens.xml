@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="extra_large_size">64dp</dimen>
+    <dimen name="medium_text_size">24sp</dimen>
+    <dimen name="login_text_size">24sp</dimen>
+    <dimen name="small_size">16dp</dimen>
+    <dimen name="extra_small_size">8dp</dimen>
+    <dimen name="block_size_1">120dp</dimen>
+    <dimen name="block_size_2">80dp</dimen>
+    <dimen name="block_size_3">40dp</dimen>
+    <dimen name="block_width_1">336dp</dimen>
+    <dimen name="block_width_2">304dp</dimen>
+    <dimen name="text_size_spinner">80dp</dimen>
+</resources>

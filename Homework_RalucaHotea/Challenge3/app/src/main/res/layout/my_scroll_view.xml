@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/small_size"
+        android:paddingRight="@dimen/small_size">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/extra_large_size"
+            android:background="@color/android_blue"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size"
+            android:text="@string/android_text" />
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="@dimen/extra_large_size"
+            android:layout_height="@dimen/extra_large_size"
+            android:background="@color/yellow"
+            android:layout_below="@id/page_title"
+            android:layout_margin="@dimen/extra_small_size"/>
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="@dimen/extra_large_size"
+            android:layout_height="@dimen/extra_large_size"
+            android:layout_below="@id/page_title"
+            android:layout_toRightOf="@id/text_1"
+            android:layout_margin="@dimen/extra_small_size"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="@dimen/extra_large_size"
+            android:layout_height="@dimen/extra_large_size"
+            android:layout_below="@id/page_title"
+            android:background="@color/light_blue"
+            android:layout_toRightOf="@id/text_2"
+            android:layout_margin="@dimen/extra_small_size"/>
+        <TextView
+            android:id="@+id/text_4"
+            android:layout_width="@dimen/extra_large_size"
+            android:layout_height="@dimen/extra_large_size"
+            android:layout_below="@id/page_title"
+            android:background="@color/blue"
+            android:layout_toRightOf="@+id/text_3"
+            android:layout_margin="@dimen/extra_small_size"/>
+        <TextView
+            android:layout_width="@dimen/extra_large_size"
+            android:layout_height="@dimen/extra_large_size"
+            android:layout_below="@id/page_title"
+            android:background="@color/peach"
+            android:layout_toRightOf="@+id/text_4"
+            android:layout_margin="@dimen/extra_small_size"/>
+        <TextView
+            android:id="@+id/paragraph_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_1"
+            android:text="@string/scroll_definition_text"/>
+        <TextView
+            android:id="@+id/paragraph_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paragraph_1"
+            android:text="@string/scroll_definition_text"
+            android:paddingTop="@dimen/extra_small_size"/>
+        <TextView
+            android:id="@+id/paragraph_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paragraph_2"
+            android:text="@string/scroll_definition_text"
+            android:paddingTop="@dimen/extra_small_size"/>
+        <TextView
+            android:id="@+id/paragraph_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paragraph_3"
+            android:text="@string/scroll_definition_text"
+            android:paddingTop="@dimen/extra_small_size"/>
+        <TextView
+            android:id="@+id/paragraph_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paragraph_4"
+            android:text="@string/scroll_definition_text"
+            android:paddingTop="@dimen/extra_small_size"/>
+        <TextView
+            android:id="@+id/paragraph_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paragraph_5"
+            android:text="@string/scroll_definition_text"
+            android:paddingTop="@dimen/extra_small_size"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
