@@ -14,10 +14,10 @@ public class SecondActivity_ex1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Logging.show(TAG, "onCreate");
+
         setContentView(R.layout.activity_second_ex1);
         button = findViewById(R.id.go_back_button);
-
-        Logging.show(TAG, "onCreate");
     }
 
     @Override

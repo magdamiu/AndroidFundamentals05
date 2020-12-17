@@ -14,9 +14,10 @@ public class FirstActivity_ex1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_ex1);
-        button = (Button) findViewById(R.id.next_activity_button);
         Logging.show(TAG, "onCreate");
+
+        setContentView(R.layout.activity_first_ex1);
+        button = findViewById(R.id.next_activity_button);
     }
 
     @Override

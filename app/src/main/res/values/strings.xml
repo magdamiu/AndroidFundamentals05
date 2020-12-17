@@ -31,4 +31,20 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="next_activity">Next activity</string>
+    <string name="text_one">Text One</string>
+    <string name="text_two">Text Two</string>
+    <string name="text_three">Text Three</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="reply_received">Reply received!</string>
+    <string name="message_received">Message received!</string>
+    <string name="you_need_to_send_a_message">You need to send a message!</string>
+    <string name="open_website">OPEN WEBSITE</string>
+    <string name="open_location">OPEN LOCATION</string>
+    <string name="share_text">share text</string>
+    <string name="call">call</string>
+    <string name="you_need_to_fill_phone_number">You need to fill in a phone number!</string>
+    <string name="you_need_to_fill_text">You need to fill in some text!</string>
+    <string name="you_need_to_fill_location">You need to fill in a location!</string>
+    <string name="you_need_to_fill_website">You need to fill in a website URL!</string>
 </resources>
