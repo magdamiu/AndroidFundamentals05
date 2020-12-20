@@ -272,4 +272,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Intent formActivity = new Intent(MainActivity.this, FormActivity.class);
         startActivity(formActivity);
     }
+
+    public void buttonOpenCodeChallenge52OnClick(View view) {
+        Intent newActivity = new Intent(MainActivity.this, Activity_CC_2_1.class);
+        startActivity(newActivity);
+    }
+
+    public void buttonOpenCodeChallenge53OnClick(View view) {
+        Intent newActivity = new Intent(MainActivity.this, Activity_CC_3_1.class);
+        startActivity(newActivity);
+    }
+
+    public void buttonOpenCodeChallenge54OnClick(View view) {
+        Intent newActivity = new Intent(MainActivity.this, Activity_CC_4.class);
+        startActivity(newActivity);
+    }
 }
