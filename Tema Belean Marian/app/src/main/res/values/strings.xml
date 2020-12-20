@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AplicattionGroup12020</string>
+    <string name="primul_nostru_textview_scriu_text_mi">Primul nostru TextView</string>
+    <string name="sunt_un_buton">Sunt un buton</string>
+    <string name="nume_i_prenume">Nume și Prenume</string>
+    <string name="sunt_de_acord_cu_t_c"><![CDATA[Sunt de acord cu T&C]]></string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="wi_fi">wi-fi</string>
+    <string name="search_for_names">Search for names</string>
+    <string name="new_text">New text</string>
+    <string name="checkbcheck">Checkbox was checked</string>
+    <string name="checkbuncheck">Checkbox was unchecked</string>
+    <string name="default_full_name">Belean Marian</string>
+    <string name="checkbox_state_checked">Checkbox checked</string>
+    <string name="checkbox_state_unchecked">Checkbox unchecked</string>
+    <string name="error_missing_text">Please add some text</string>
+    <string name="this_is_a_button">This is a button</string>
+    <string name="this_is_a_green_button">This is a green button</string>
+    <string name="this_is_an_edittext">This is an EditText</string>
+    <string name="this_is_a_new_edittext">This is a new EditText</string>
+</resources>
