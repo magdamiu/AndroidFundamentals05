@@ -1,0 +1,30 @@
+<resources>
+
+    <string-array name="android_versions">
+        <item>Cupcake</item>
+        <item>Donut</item>
+        <item>Eclair</item>
+        <item>KitKat</item>
+        <item>Pie</item>
+    </string-array>
+
+    <string name="app_name">code_challange_number_1</string>
+    <string name="top_left_text">This is an orange TextView</string>
+    <string name="top_middle_text">This is a green TextView</string>
+    <string name="top_right_text">This is a blue TextView</string>
+    <string name="middle_left_button_text">This is a button</string>
+    <string name="middle_right_button_text">This is a green button</string>
+    <string name="first_text_edit_text">This is an EditText</string>
+    <string name="second_text_edit_text">This is a new EditText</string>
+    <string name="check_box_text">Notify me :)</string>
+    <string name="switch_text">Auto backup</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="loginTextLabel">LOGIN</string>
+    <string name="phone_text_edit_hint">Phone</string>
+    <string name="email_text_edit_hint">Email</string>
+    <string name="terms_and_conditions_check_box"><![CDATA[I accept T&C]]></string>
+    <string name="submit_button_text">SUBMIT</string>
+    <string name="big_chunky_paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="sppiner_cupcake">cupcake</string>
+</resources>
