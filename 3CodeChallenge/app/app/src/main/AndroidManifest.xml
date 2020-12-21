@@ -9,6 +9,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity android:name=".Challenge5.ActivityCodeChallenge4">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Challenge5.SecondActivityCodeChallenge3" />
+        <activity android:name=".Challenge5.ActivityCodeChallenge3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Challenge5.SecondActivityCodeChallenge2" />
+        <activity android:name=".Challenge5.ActivityCodeChallenge2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Challenge5.SecondActivityCodeChallenge1" />
+        <activity android:name=".Challenge5.ActivityCodeChallenge1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Challenge4.MainActivity4">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
