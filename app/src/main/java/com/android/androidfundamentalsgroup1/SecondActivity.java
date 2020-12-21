@@ -1,8 +1,6 @@
 package com.android.androidfundamentalsgroup1;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,38 +8,36 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class SecondActivity extends AppCompatActivity {
     private final String TAG = "SecondActivity";
     private TextView textViewTop;
 
-    //code challenge 2
-    private RecyclerView recyclerViewStudents;
-    private List<Student> students;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_second);
-//
-//        onInitViews();
-//
-//        Logging.show(TAG, "onCreate");
+        setContentView(R.layout.activity_second);
 
+        onInitViews();
 
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            String message = bundle.getString(MainActivity.MESSAGE_KEY);
+            textViewTop.setText(message);
 
-        //code challenge 1
-         //setContentView(R.layout.code_challenge_no1);
+            // the result
+            message += " Message received. It's working";
 
-        //code challenge 2
-        setContentView(R.layout.code_challenge_no2);
-        displayStudentsList();
+            Intent intent = new Intent();
+            intent.putExtra(MainActivity.MESSAGE_KEY, message);
 
-        //code challenge 3
-        setContentView(R.layout.code_challenge_no3);
+            // sends the result to the MainActivity and it's ok with the situation so we send RESULT_OK (happy path)
+            setResult(RESULT_OK, intent);
+
+            // removes the current activity from the stack of activities
+            finish();
+        }
+
+        Logging.show(TAG, "onCreate");
     }
 
     @Override
@@ -83,33 +79,7 @@ public class SecondActivity extends AppCompatActivity {
         }
     }
 
-    //code challenge2
-    private void displayStudentsList() {
-        // data source - checked
-        studentsSource();
-
-        // layout manager - checked
-        setStudentsLayoutManager();
-
-        // adapter - checked
-        setStudentsAdapter();
-    }
-    // Student RecyclerView
-    private void studentsSource() {
-        students = new ArrayList<>();
-        Student student = null;
-        for (int i = 0; i < 30; i++) {
-            student = new Student(i, "FirstName" + i, "LastName " + i);
-            students.add(student);
-        }
-    }
-    // step 4
-    private void setStudentsLayoutManager() {
-        recyclerViewStudents = findViewById(R.id.recyclerViewStudents);
-        recyclerViewStudents.setLayoutManager(new LinearLayoutManager(this));
-    }
-
-    private void setStudentsAdapter() {
-        recyclerViewStudents.setAdapter(new StudentAdapter(this, students));
+    public void buttonRightOnClick(View view) {
+        textViewTop.setText("clicked left button");
     }
 }

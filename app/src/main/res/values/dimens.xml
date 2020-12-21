@@ -8,7 +8,4 @@
     <dimen name="large_space">64dp</dimen>
     <dimen name="medium_space">32dp</dimen>
     <dimen name="extra_small_padding">4dp</dimen>
-    <dimen name="image_width">150dp</dimen>
-    <dimen name="image_height">170dp</dimen>
-    <dimen name="frame_margin">16dp</dimen>
 </resources>

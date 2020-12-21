@@ -4,12 +4,4 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="white">#ffffff</color>
-    <color name="first_part_background">#FEF9CF</color>
-    <color name="line_color">#11837A</color>
-    <color name="first_frame_background">#9CF89C</color>
-    <color name="second_frame_background">#11837A</color>
-    <color name="third_frame_background">#D52261</color>
-    <color name="forth_frame_background">#FEF9CF</color>
-    <color name="happy_holidays_color">#000000</color>
-    <color name="from_color">#4D4D51</color>
 </resources>
