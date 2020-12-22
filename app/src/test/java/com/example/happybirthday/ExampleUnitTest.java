@@ -1,4 +1,4 @@
-package com.android.androidfundamentalsgroup1;
+package com.example.happybirthday;
 
 import org.junit.Test;
 
