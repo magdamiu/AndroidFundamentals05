@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SecondActivity extends AppCompatActivity {
 
-    TextView secondActivityTextView;
+    private TextView secondActivityTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
