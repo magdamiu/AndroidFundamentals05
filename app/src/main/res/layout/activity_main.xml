@@ -6,38 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/buttonTextOne"
+    <TextView
+        android:id="@+id/textViewTitlePrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="buttonOneOpenSecondActivity"
-        android:text="@string/text_one"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonTextTwo"
+        android:layout_marginTop="@dimen/small_margin"
+        android:text="@string/reply_received"
+        android:textSize="@dimen/medium_font_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonTextTwo"
+    <TextView
+        android:id="@+id/textViewMessagePrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:onClick="buttonTwoOpenSecondActivity"
-        android:text="@string/text_two"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonTextThree"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        android:layout_marginTop="@dimen/small_margin"
+        android:hint="@string/message_received"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitlePrimary" />
 
-    <Button
-        android:id="@+id/buttonTextThree"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:onClick="buttonThreeOpenSecondActivity"
-        android:text="@string/text_three"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_padding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/editTextMessagePrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="@string/text_preview" />
+
+        <Button
+            android:id="@+id/buttonSendPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonSendMessage"
+            android:text="@string/send" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
