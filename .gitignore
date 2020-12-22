@@ -44,7 +44,6 @@ bin/
 gen/
 out/
 
-2UI/
 3CodeChallenge\app\app\src\main\java\com\example\myapplication\Challenge4/
 3CodeChallenge\app\app\src\main\res\layout\activity_main.xml
 3CodeChallenge\app\app\src\main\res\layout\activity_main4.xml

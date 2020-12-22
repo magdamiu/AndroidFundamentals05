@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="i_accept_t_c"><![CDATA[I accept T&C]]></string>
+    <string name="submit">SUBMIT</string>
+    <string name="scroll_view_definition">A view group that allows the view hierarchy placed within it to be scrolled. Scroll view may have only one direct child placed within it. To add multiple views within the scroll view, make the direct child you add a view group, for example LinearLayout, and place additional views within that LinearLayout.  Scroll view supports vertical scrolling only. For horizontal scrolling, use HorizontalScrollView instead.  Never add a RecyclerView or ListView to a scroll view. Doing so results in poor user interface performance and a poor user experience.</string>
+    <string name="spinner_example">Spinner Example</string>
+    <string name="next_view">Next View</string>
+    <string name="submit_error">Fill the input with a valid email adress</string>
+    <string name="first_name">FirstName</string>
+    <string name="last_name">LastName</string>
+    <string name="christmas_message">"Have yourself a merry little Christmas,\nLet your heart be light\nFrom now on, our troubles will be out of sight"</string>
+    <string name="happy_holidays">Happy Holidays!</string>
+    <string name="from_gabi">From Gabi</string>
+    <string name="let_it_snow">LET IT SNOW</string>
+    <string name="gingles_bells">GINGLES BELLS</string>
+    <string name="todo">TODO</string>
+    <string name="open_second_activity">Open second activity</string>
+    <string name="text_one">Text one</string>
+    <string name="text_two">Text two</string>
+    <string name="text_three">Text three</string>
+    <string name="text_view">Text view</string>
+    <string name="write_a_message">Write a message</string>
+    <string name="send">Send</string>
+    <string name="reply_received">Reply received</string>
+    <string name="message_received">Message received</string>
+    <string name="cluj_napoca">Cluj-Napoca</string>
+    <string name="open_location">Open Location</string>
+    <string name="google_site">https://www.google.com/</string>
+    <string name="open_website">Open website</string>
+    <string name="android">android</string>
+    <string name="share_text">Share text</string>
+    <string name="call_number">0722222222</string>
+    <string name="call">Call</string>
+</resources>
