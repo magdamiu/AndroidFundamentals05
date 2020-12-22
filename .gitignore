@@ -44,15 +44,15 @@ bin/
 gen/
 out/
 
-3CodeChallenge\app\app\src\main\java\com\example\myapplication\Challenge4/
-3CodeChallenge\app\app\src\main\res\layout\activity_main.xml
-3CodeChallenge\app\app\src\main\res\layout\activity_main4.xml
-3CodeChallenge\app\app\src\main\res\layout\android_layout.xml
-3CodeChallenge\app\app\src\main\res\layout\constraint_layout.xml
-3CodeChallenge\app\app\src\main\res\layout\student_recycler_view.xml
-3CodeChallenge\app\app\src\main\res\layout\student_view_item.xml
-3CodeChallenge\app\app\src\main\res\layout\views_sample_challenge2.xml
-3CodeChallenge\app\app\src\main\res\layout\views_sample_challenge2_frame_layout.xml
-3CodeChallenge\app\app\src\main\res\layout\views_sample_challenge2_spinner.xml
-3CodeChallenge\app\app\src\main\res\layout\views_sample_login_view.xml
-3CodeChallenge\app\app\src\main\res\layout\views_sample_puzzle_game.xml
+3CodeChallenge/app/app/src/main/java/com/example/myapplication/Challenge4/
+3CodeChallenge/app/app/src/main/res/layout/activity_main.xml
+3CodeChallenge/app/app/src/main/res/layout/activity_main4.xml
+3CodeChallenge/app/app/src/main/res/layout/android_layout.xml
+3CodeChallenge/app/app/src/main/res/layout/constraint_layout.xml
+3CodeChallenge/app/app/src/main/res/layout/student_recycler_view.xml
+3CodeChallenge/app/app/src/main/res/layout/student_view_item.xml
+3CodeChallenge/app/app/src/main/res/layout/views_sample_challenge2.xml
+3CodeChallenge/app/app/src/main/res/layout/views_sample_challenge2_frame_layout.xml
+3CodeChallenge/app/app/src/main/res/layout/views_sample_challenge2_spinner.xml
+3CodeChallenge/app/app/src/main/res/layout/views_sample_login_view.xml
+3CodeChallenge/app/app/src/main/res/layout/views_sample_puzzle_game.xml
