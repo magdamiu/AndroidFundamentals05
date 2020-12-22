@@ -1,14 +1,59 @@
-*.iml
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Gradle files
+.gradle/
 .gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+build/
+
+# Signing files
+.signing/
+
+# User-specific configurations
+.idea/
+.idea
+*.iml
+
+# OS-specific files
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log Files
+*.log
+
+
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+2UI/
+3CodeChallenge\app\app\src\main\java\com\example\myapplication\Challenge4/
+3CodeChallenge\app\app\src\main\res\layout\activity_main.xml
+3CodeChallenge\app\app\src\main\res\layout\activity_main4.xml
+3CodeChallenge\app\app\src\main\res\layout\android_layout.xml
+3CodeChallenge\app\app\src\main\res\layout\constraint_layout.xml
+3CodeChallenge\app\app\src\main\res\layout\student_recycler_view.xml
+3CodeChallenge\app\app\src\main\res\layout\student_view_item.xml
+3CodeChallenge\app\app\src\main\res\layout\views_sample_challenge2.xml
+3CodeChallenge\app\app\src\main\res\layout\views_sample_challenge2_frame_layout.xml
+3CodeChallenge\app\app\src\main\res\layout\views_sample_challenge2_spinner.xml
+3CodeChallenge\app\app\src\main\res\layout\views_sample_login_view.xml
+3CodeChallenge\app\app\src\main\res\layout\views_sample_puzzle_game.xml
