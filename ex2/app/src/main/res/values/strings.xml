@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android Developer Fundamentals</string>
+    <string-array name="numbers">
+        <item>Cupcake</item>
+        <item>Donut</item>
+        <item>Eclair</item>
+        <item>KitKat</item>
+        <item>Pie</item>
+    </string-array>
+</resources>
