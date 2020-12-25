@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:background="#FFEB3B"
+                android:backgroundTint="#FFC107" />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_toRightOf="@id/textView0"
+                android:background="#FFEB3B"
+                android:backgroundTint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_toRightOf="@id/textView9"
+                android:background="#FFEB3B"
+                android:backgroundTint="#4BE4D6" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_toRightOf="@id/textView10"
+                android:background="#FFEB3B"
+                android:backgroundTint="#009688" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_toRightOf="@id/textView11"
+                android:background="#FFEB3B"
+                android:backgroundTint="#F44336" />
+
+            <TextView
+                android:layout_below="@id/textView0"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ScrollView: A view group that allows the view hierarchy\nplaced within it to be scrolled. Scroll view may have only one\ndirect child placed within it. To add multiple views within the\nscroll view, make the direct child you add a view group, for\nexample LinearLayout, and place additional views within that\nLinearLayout.\n" />
+
+            <TextView
+                android:layout_below="@id/textView1"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ScrollView: A view group that allows the view hierarchy\nplaced within it to be scrolled. Scroll view may have only one\ndirect child placed within it. To add multiple views within the\nscroll view, make the direct child you add a view group, for\nexample LinearLayout, and place additional views within that\nLinearLayout.\n" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:layout_weight="1"
+                android:text="ScrollView: A view group that allows the view hierarchy\nplaced within it to be scrolled. Scroll view may have only one\ndirect child placed within it. To add multiple views within the\nscroll view, make the direct child you add a view group, for\nexample LinearLayout, and place additional views within that\nLinearLayout.\n" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView3"
+                android:layout_weight="1"
+                android:text="ScrollView: A view group that allows the view hierarchy\nplaced within it to be scrolled. Scroll view may have only one\ndirect child placed within it. To add multiple views within the\nscroll view, make the direct child you add a view group, for\nexample LinearLayout, and place additional views within that\nLinearLayout.\n"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView4"
+                android:layout_weight="1"
+                android:text="ScrollView: A view group that allows the view hierarchy\nplaced within it to be scrolled. Scroll view may have only one\ndirect child placed within it. To add multiple views within the\nscroll view, make the direct child you add a view group, for\nexample LinearLayout, and place additional views within that\nLinearLayout.\n"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView5"
+                android:layout_weight="1"
+                android:text="ScrollView: A view group that allows the view hierarchy\nplaced within it to be scrolled. Scroll view may have only one\ndirect child placed within it. To add multiple views within the\nscroll view, make the direct child you add a view group, for\nexample LinearLayout, and place additional views within that\nLinearLayout.\n"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView6"
+                android:layout_weight="1"
+                android:text="ScrollView: A view group that allows the view hierarchy\nplaced within it to be scrolled. Scroll view may have only one\ndirect child placed within it. To add multiple views within the\nscroll view, make the direct child you add a view group, for\nexample LinearLayout, and place additional views within that\nLinearLayout.\n"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView7"
+                android:layout_weight="1"
+                android:text="ScrollView: A view group that allows the view hierarchy\nplaced within it to be scrolled. Scroll view may have only one\ndirect child placed within it. To add multiple views within the\nscroll view, make the direct child you add a view group, for\nexample LinearLayout, and place additional views within that\nLinearLayout.\n"
+                tools:ignore="DuplicateIds" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
