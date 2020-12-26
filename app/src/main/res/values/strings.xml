@@ -58,4 +58,49 @@
     <string name="open_style_activity">Open Style Activity</string>
     <string name="forth_text_in_a_card_view">A new text, the 4th one...</string>
     <string name="new_text_in_card">This is the 5th text here...</string>
+
+    <string name="go_to_first_activity">Go to code challange #2</string>
+    <string name="text_2">text 2</string>
+    <string name="text_1">Text 1</string>
+    <string name="text_3">text 3</string>
+    <string name="message1">Because Mount Everest is the highest mountain in the world, it has attracted considerable attention and climbing attempts. Whether the mountain was climbed in ancient times is unknown. It may have been climbed in 1924, although this has never been confirmed, as both of the men making the attempt failed to return from the mountain. Several climbing routes has been established over several decades of climbing expeditions to the mountain. The worlds highest mountain Mount Everest is 0.86m higher than had been previously officially calculated, Nepal and China have jointly announced.
+        Until now the countries differed over whether to add the snow cap on top. The new height is 8,848.86m (29,032 ft).
+        Chinas previous official measurement of 8,844.43m had put the mountain nearly four metres lower than Nepals.
+        Everest stands on the border between China and Nepal and mountaineers climb it from both sides.
+        Officials at Nepals foreign ministry and department of survey said surveyors from both countries had co-ordinated to agree on the new height.
+        The agreement to jointly announce the new measurement of the Earths highest point was made during Chinese President Xi Jinpings visit to the Nepalese capital, Kathmandu last year.
+        Why the difference over official height
+        Chinese authorities had said previously Mount Everest should be measured to its rock height, while Nepalese authorities argued the snow on top of the summit should be included.
+        The Chinese surveyors had calculated their figure after they measured the mountain in 2005.
+        Nepals government officials told the BBC in 2012 that they were under pressure from China to accept the Chinese height and therefore they had decided to go for a fresh measurement to "set the record straight once and for all".
+        The 8,848m height Nepal had been using for Mount Everest was determined by the Survey of India in 1954, but for the first time the country has now conducted its own measurement of the summit.
+        Four Nepalese land surveyors spent two years training for the mission, before heading to the summit.
+        "For summiteers, scaling the highest peak means a great accomplishment. For us, it was just the beginning," Mr Gautam had told BBC Nepali after his return.
+        "Unlike other surveys of the Everest in the past, we chose 03:00 to minimise errors that could have been caused because of sunlight in the day time."
+        Why else has the height been questioned?
+        Some geologists have suggested a major earthquake in 2015 may have had an impact on Mount Everests height. The 7.8 magnitude earthquake killed nearly 9,000 people in Nepal, and caused an avalanche which buried parts of the base camp at the mountain. At least 18 climbers were killed.
+        How was Mount Everest re-measured?
+        The heights of mountains are measured with the mean sea level as the base. So its less about working out the where the top is, than where the bottom would be.
+        Nepal used the Bay of Bengal as its sea level, but India had already surveyed a point closer to Everest, near the India-Nepal border, from the bay, and was able to provide the Nepalese surveyors with the height at that point.
+        From there, Nepal built a network of line-of-sight stations stretching nearly 250km (155 miles) to the point Everest first become visible, creating a chain of points it could measure and add together.
+        The Chinese surveyors, according to the state-run China Daily, used the Yellow Sea in the eastern province of Shandong as their sea-level base.
+    </string>
+    <string name="message2">There are a number of routes on K2, of somewhat different character, but they all share some key difficulties, the first being the extremely high altitude and resulting lack of oxygen: there is only one-third as much oxygen available to a climber on the summit of K2 as there is at sea level.[74] The second is the propensity of the mountain to experience extreme storms of several days duration, which have resulted in many of the deaths on the peak. The third is the steep, exposed, and committing nature of all routes on the mountain, which makes retreat more difficult, especially during a storm. Despite many attempts there have been no successful winter ascents. All major climbing routes lie on the Pakistani side, which is also where base camp is located.</string>
+    <string name="message3">The mountains of Transylvania conjure up images of dark serrated ridges and peaks, swirling mists, crumbling castles and above all the image of Dracula. Dracula history is certainly there, there are crumbling castles and a lot of swirling mists but dark and serrated the mountains are not.  In fact, Făgăraş Mountains are mostly defined by long green slopes and deep valleys in the summer, which then turn wild as the snow settles down. Moldoveanu Peak is countrys highest point with its 2544 m, only 17 m higher than his twin brother - Viştea Mare Peak (2527 m, 3rd highest in Romania) – located 420 meters to the North. Together they form the well known and easy to recognize trapezoid Viştea Mare – Moldoveanu, the highest ridge in Făgăraş Mountains and in the whole country.  One notable fact of Moldoveanu is that it lies a good distance from the road head and would require a good four days round trip from Braşov (unless you are a superman).  During summer, the climb is nothing more than a walk but the distance from the road means you have to carry enough gear for the four days - although there are huts on route. Sharing the route with Romanian backpackers, this can be a very satisfying climb.</string>
+    <string name="go_to_code_challange_3">Go to code challange #3</string>
+    <string name="message_received">Message received</string>
+    <string name="no_message_error">"Please add some text here"</string>
+    <string name="reply_received">Reply received</string>
+    <string name="send">Send</string>
+    <string name="message_hint">Message</string>
+    <string name="go_to_code_challange_4">go to code challange #4</string>
+    <string name="https_www_android_com">https://www.android.com/</string>
+    <string name="barcelona">Barcelona</string>
+    <string name="we_love_android">We love Android! :)</string>
+    <string name="open_website">open website</string>
+    <string name="open_location">open location</string>
+    <string name="share_text">share text</string>
+    <string name="_8005551234">8005551234</string>
+    <string name="call">call</string>
+    <string name="error_no_input_in_edittext">You need to fill this field</string>
 </resources>

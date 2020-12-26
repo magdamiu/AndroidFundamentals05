@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".styles.StyleSamplesActivity"></activity>
+        <activity android:name=".CC4Activity"></activity>
+        <activity android:name=".CC3Activity2" />
+        <activity android:name=".CC3Activity1" />
+        <activity android:name=".CC2SecondActivity" />
+        <activity android:name=".CC2FirstActivity" />
         <activity
             android:name=".NavigationActivity"
             android:label="@string/title_activity_navigation"
