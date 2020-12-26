@@ -1,12 +1,12 @@
 package com.android.androidfundamentalsgroup1;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -21,11 +21,20 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.androidfundamentalsgroup1.activities.FormActivity;
+import com.android.androidfundamentalsgroup1.activities.SecondActivity;
+import com.android.androidfundamentalsgroup1.fragments.SumActivity;
+import com.android.androidfundamentalsgroup1.recycler_view.Email;
+import com.android.androidfundamentalsgroup1.recycler_view.EmailAdapter;
+import com.android.androidfundamentalsgroup1.styles.StyleSamplesActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private final String ANDROID_DOCS = "https://developer.android.com/";
+    public static final String MESSAGE_KEY = "message";
+    private static final int REQUEST_CODE_MESSAGE = 12;
     private final String TAG = "MainActivity";
 
     private TextView oneTextView;
@@ -37,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private WebView webViewAndroid;
     private Spinner spinnerAndroidVersions;
     private RecyclerView recyclerViewEmails;
+    private EditText editTextMessage;
 
     private List<Email> emails;
 
@@ -65,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         // displayEmailsList();
 
         setContentView(R.layout.activity_main);
+        editTextMessage = findViewById(R.id.ediTextMessage);
 
         Logging.show(TAG, "onCreate");
 
@@ -239,6 +250,47 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void buttonOpenSecondActivityOnClick(View view) {
         Intent secondActivity = new Intent(MainActivity.this, SecondActivity.class);
+        secondActivity.putExtra(MESSAGE_KEY, getString(R.string.hello_message));
         startActivity(secondActivity);
+    }
+
+    public void buttonCommunicationBetweenActivitiesOnClick(View view) {
+        Intent secondActivity = new Intent(MainActivity.this, SecondActivity.class);
+        String message = editTextMessage.getText().toString();
+        if (message != null && message.length() > 0) {
+            secondActivity.putExtra(MESSAGE_KEY, message);
+        } else {
+            editTextMessage.setError(getString(R.string.error_missing_message));
+        }
+        startActivityForResult(secondActivity, REQUEST_CODE_MESSAGE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == REQUEST_CODE_MESSAGE && resultCode == RESULT_OK) {
+            String result = data.getStringExtra(MESSAGE_KEY);
+            Logging.show(TAG, result);
+        }
+    }
+
+    public void buttonOpenFormActivityOnClick(View view) {
+        Intent formActivity = new Intent(MainActivity.this, FormActivity.class);
+        startActivity(formActivity);
+    }
+
+    public void buttonOpenSumActivityOnClick(View view) {
+        Intent formActivity = new Intent(MainActivity.this, SumActivity.class);
+        startActivity(formActivity);
+    }
+
+    public void buttonOpenNavigationDrawerActivityOnClick(View view) {
+        Intent formActivity = new Intent(MainActivity.this, NavigationActivity.class);
+        startActivity(formActivity);
+    }
+
+    public void buttonOpenStyleActivityOnClick(View view) {
+        Intent formActivity = new Intent(MainActivity.this, StyleSamplesActivity.class);
+        startActivity(formActivity);
     }
 }

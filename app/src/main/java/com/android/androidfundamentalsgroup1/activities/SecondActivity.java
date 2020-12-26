@@ -1,4 +1,4 @@
-package com.android.androidfundamentalsgroup1;
+package com.android.androidfundamentalsgroup1.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.android.androidfundamentalsgroup1.Logging;
+import com.android.androidfundamentalsgroup1.MainActivity;
+import com.android.androidfundamentalsgroup1.R;
 
 public class SecondActivity extends AppCompatActivity {
     private final String TAG = "SecondActivity";
@@ -18,6 +22,24 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         onInitViews();
+
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            String message = bundle.getString(MainActivity.MESSAGE_KEY);
+            textViewTop.setText(message);
+
+            // the result
+            message += " Message received. It's working";
+
+            Intent intent = new Intent();
+            intent.putExtra(MainActivity.MESSAGE_KEY, message);
+
+            // sends the result to the MainActivity and it's ok with the situation so we send RESULT_OK (happy path)
+            setResult(RESULT_OK, intent);
+
+            // removes the current activity from the stack of activities
+            finish();
+        }
 
         Logging.show(TAG, "onCreate");
     }
