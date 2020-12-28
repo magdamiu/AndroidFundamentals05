@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AlertsActivity">
+
+    <TextView
+        android:id="@+id/date_picker_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="data" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="datePicker"
+        android:text="@string/open_date_picker" />
+
+    <TextView
+        android:id="@+id/time_picker_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="time" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="timePicker"
+        android:text="@string/open_time_picker" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openDialog"
+        android:text="@string/open_dialog" />
+
+</LinearLayout>
