@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView_text1"
+    tools:context=".MainActivity1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text1_par1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Based loosely on the novel Roadside Picnic by Arkady and Boris Strugatsky and film of the same name, Stalker by Andrei Tarkovsky,[1] the S.T.A.L.K.E.R. games take place within the Zone, an alternate history version of the Chernobyl Exclusion Zone. In the world of the games, experimental labs were made in the Exclusion Zone which allowed scientists to experiment with psychic abilities which arose following the disaster. Their experimentation resulted in a second disaster, causing physical and meteorological phenomena to manifest throughout the Zone, as well as the mutation of fauna and some humans.[2] The Zone is littered with such anomalies: hazardous phenomena which seemingly defy physics, having various effects on any object entering them.["
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_marginTop="220dp"
+            android:id="@+id/text1_par2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In the first game of the series, the player takes on the role of an amnesiac stalker referred to as the &quot;Marked One&quot;, who is tasked with killing another stalker named Strelok. During the course of the game, the protagonist uncovers clues to his past and true identity while helping other stalkers and fighting the mutated creatures that inhabit the Zone. Shadow of Chernobyl features 7 endings. These endings are dependent on multiple factors, such as money earned during the game, supporting certain factions, or how much of the protagonist's memory was pieced together. "
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_marginTop="240dp"
+            android:id="@+id/text1_par3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text='The third game in the series, Call of Pripyat takes place shortly after the events of Shadow of Chernobyl. Having discovered the open path to the center of the Zone, the government decides to take control of it via "Operation Fairway", in which they plan to thoroughly investigate the territory before dispatching the main military force. Despite these preparations, the military operation fails, with all helicopters crashing. In order to determine the cause of the crashes, the Security Service of Ukraine sends former stalker Major Alexander Degtyarev into the Zone. ' />
+
+    </LinearLayout>
+</ScrollView>
