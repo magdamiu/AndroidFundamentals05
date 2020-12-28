@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView_text3"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text3_par1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Christmas (or the Feast of the Nativity) is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25[a] as a religious and cultural celebration among billions of people around the world.[2][10][11] A feast central to the Christian liturgical year, it is preceded by the season of Advent or the Nativity Fast and initiates the season of Christmastide, which historically in the West lasts twelve days and culminates on Twelfth Night.[12] Christmas Day is a public holiday in many of the world's nations,[13][14][15] is celebrated religiously by a majority of Christians,[16] as well as culturally by many non-Christians,[1][17] and forms an integral part of the holiday season centered around it. "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text3_par2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:text="Although the month and date of Jesus' birth are unknown, the church in the early fourth century fixed the date as December 25.[20][21][22] This corresponds to the date of the winter solstice on the Roman calendar.[23] Most Christians celebrate on December 25 in the Gregorian calendar, which has been adopted almost universally in the civil calendars used in countries throughout the world. However, part of the Eastern Christian Churches celebrate Christmas on December 25 of the older Julian calendar, which currently corresponds to January 7 in the Gregorian calendar. For Christians, believing that God came into the world in the form of man to atone for the sins of humanity, rather than knowing Jesus' exact birth date, is considered to be the primary purpose in celebrating Christmas.[24][25][26]"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text3_par3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:text="The celebratory customs associated in various countries with Christmas have a mix of pre-Christian, Christian, and secular themes and origins.[27] Popular modern customs of the holiday include gift giving; completing an Advent calendar or Advent wreath; Christmas music and caroling; viewing a Nativity play; an exchange of Christmas cards; church services; a special meal; and the display of various Christmas decorations, including Christmas trees, Christmas lights, nativity scenes, garlands, wreaths, mistletoe, and holly. In addition, several closely related and often interchangeable figures, known as Santa Claus, Father Christmas, Saint Nicholas, and Christkind, are associated with bringing gifts to children during the Christmas season and have their own body of traditions and lore.[28] Because gift-giving and many other aspects of the Christmas festival involve heightened economic activity, the holiday has become a significant event and a key sales period for retailers and businesses. The economic impact of Christmas has grown steadily over the past few centuries in many regions of the world. "
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</ScrollView>
