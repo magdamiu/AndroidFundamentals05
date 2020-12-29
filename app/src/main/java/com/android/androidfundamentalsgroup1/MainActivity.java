@@ -2,10 +2,12 @@ package com.android.androidfundamentalsgroup1;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private Spinner spinnerAndroidVersions;
     private RecyclerView recyclerViewEmails;
     private EditText editTextMessage;
+    private ConstraintLayout constraintLayoutMain;
 
     private List<Email> emails;
 
@@ -77,11 +80,29 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
         editTextMessage = findViewById(R.id.ediTextMessage);
 
-        Logging.show(TAG, "onCreate");
+        logOnCreate(TAG, "onCreate");
 
+        debugSample();
+
+        constraintLayoutMain = findViewById(R.id.constraintLayoutMain);
+        setupAnimation();
+    }
+
+    private void debugSample() {
         int result = sum(10, 5, 4);
         Logging.show("MainActivity result = ", result + "");
         result++;
+    }
+
+    private void logOnCreate(String tag, String onCreate) {
+        Logging.show(tag, onCreate);
+    }
+
+    private void setupAnimation() {
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayoutMain.getBackground();
+        animationDrawable.setEnterFadeDuration(2500);
+        animationDrawable.setExitFadeDuration(5000);
+        animationDrawable.start();
     }
 
     @Override
