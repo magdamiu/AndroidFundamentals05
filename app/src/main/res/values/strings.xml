@@ -58,4 +58,8 @@
     <string name="open_style_activity">Open Style Activity</string>
     <string name="forth_text_in_a_card_view">A new text, the 4th one...</string>
     <string name="new_text_in_card">This is the 5th text here...</string>
+    <string name="click_on_fab">Clicked on FAB</string>
+    <string name="error_occured">Error</string>
+    <string name="retry">Retry</string>
+    <string name="retry_message">Please try again</string>
 </resources>
