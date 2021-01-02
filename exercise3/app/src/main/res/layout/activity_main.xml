@@ -4,59 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/constraint_layout1"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/activity1_textView1"
-        android:layout_width="397dp"
-        android:layout_height="51dp"
-        app:layout_constraintBottom_toTopOf="@+id/activity1_textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentContainer"
+        android:layout_margin="@dimen/marginFragmentContainer"/>
 
-    <TextView
-        android:id="@+id/activity1_textView2"
-        android:layout_width="395dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="428dp"
-        app:layout_constraintBottom_toTopOf="@+id/activity1_editext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity1_textView1" />
-
-    <EditText
-        android:id="@+id/activity1_editext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Message"
-        android:textColor="#C6C4C4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/activity1_button"
-        app:layout_constraintHorizontal_bias="0.296"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity1_textView2" />
-
-    <Button
-        android:id="@+id/activity1_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="53dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="41dp"
-        android:backgroundTint="#959191"
-        android:text="SEND"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/activity1_editext"
-        app:layout_constraintTop_toBottomOf="@+id/activity1_textView2"
-        app:layout_constraintVertical_bias="0.936" />
 </androidx.constraintlayout.widget.ConstraintLayout>
