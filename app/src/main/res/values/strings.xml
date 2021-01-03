@@ -62,4 +62,9 @@
     <string name="error_occured">Error</string>
     <string name="retry">Retry</string>
     <string name="retry_message">Please try again</string>
+    <string name="go_to_code_challange_2">Go to code challange 2</string>
+    <string name="go_to_code_challange_3">Go to code challange 3</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="open_datepicker">Open DatePicker</string>
 </resources>

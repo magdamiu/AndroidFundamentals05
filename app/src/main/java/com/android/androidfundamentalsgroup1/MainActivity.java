@@ -1,11 +1,5 @@
 package com.android.androidfundamentalsgroup1;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -22,6 +16,12 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.androidfundamentalsgroup1.activities.FormActivity;
 import com.android.androidfundamentalsgroup1.activities.SecondActivity;
@@ -289,7 +289,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == REQUEST_CODE_MESSAGE && resultCode == RESULT_OK) {
+        if (requestCode == REQUEST_CODE_MESSAGE && resultCode == RESULT_OK) {
             String result = data.getStringExtra(MESSAGE_KEY);
             Logging.show(TAG, result);
         }
@@ -312,6 +312,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void buttonOpenStyleActivityOnClick(View view) {
         Intent formActivity = new Intent(MainActivity.this, StyleSamplesActivity.class);
+        startActivity(formActivity);
+    }
+
+    public void openCodeChallange2(View view) {
+        Intent formActivity = new Intent(MainActivity.this, CodeChallange2Battery.class);
+        startActivity(formActivity);
+    }
+
+    public void openCodeChallange3(View view) {
+        Intent formActivity = new Intent(MainActivity.this, CodeChallange3.class);
         startActivity(formActivity);
     }
 }
