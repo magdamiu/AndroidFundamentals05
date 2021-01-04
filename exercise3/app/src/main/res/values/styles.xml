@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:colorAccent">#FF5722</item>
+        <item name="android:selectableItemBackgroundBorderless">@color/purple_500</item>
+        <item name="android:colorControlActivated">#668147</item>
+        <item name="android:colorControlHighlight">#F8062A</item>
+    </style>
+</resources>

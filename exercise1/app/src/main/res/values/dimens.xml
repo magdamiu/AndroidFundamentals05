@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="fragmentLayoutMargin">20dp</dimen>
+    <dimen name="textViewLayoutMarginLeft">110dp</dimen>
+    <dimen name="textViewLayoutMarginTop">20dp</dimen>
+    <dimen name="textViewTextSize">25sp</dimen>
+    <dimen name="gridLayoutMarginTop">250dp</dimen>
+    <dimen name="cardViewLayoutWidth">160dp</dimen>
+    <dimen name="carViewPadding">10dp</dimen>
+    <dimen name="cardViewCornerRadius">10dp</dimen>
+    <dimen name="cardViewCardElevation">10dp</dimen>
+    <dimen name="imageViewWidth">150dp</dimen>
+    <dimen name="imageViewHeight">150dp</dimen>
 </resources>

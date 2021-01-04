@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="marginFragmentContainer">20dp</dimen>
+    <dimen name="plusButtonMarginEnd">54dp</dimen>
+    <dimen name="plusButtonTextSize">20sp</dimen>
+    <dimen name="minusButtonMarginStart">58dp</dimen>
+    <dimen name="minusButtonMarginEnd">123dp</dimen>
+    <dimen name="minusButtonTextSize">20sp</dimen>
 </resources>

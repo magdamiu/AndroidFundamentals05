@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">My Application</string>
-    <string name="gmail">Gmail</string>
-    <string name="gmailAddress">myemail@gmail.com</string>
-    <string name="navigationDrawerOpen">Open navigation drawer</string>
-    <string name="navigationDrawerClose">Close navigation drawer</string>
-</resources>

@@ -1,25 +1,37 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
+    public ImageView imageView;
+    public int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        addFragment();
+
+        imageView = findViewById(R.id.imageView);
     }
 
-    private void addFragment() {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        SampleFragment sampleFragment = new SampleFragment();
-        fragmentTransaction.add(R.id.fragmentContainer, sampleFragment);
-        fragmentTransaction.commit();
+    public void plusButton(View view) {
+        ++count;
+        if (count > 6) {
+            count = 0;
+        }
+        imageView.setImageLevel(count);
     }
+
+    public void minusButton(View view) {
+        --count;
+        if (count < 0) {
+            count = 6;
+        }
+        imageView.setImageLevel(count);
+    }
+
 }

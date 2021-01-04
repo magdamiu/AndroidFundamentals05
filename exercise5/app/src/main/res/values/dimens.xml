@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="marginFragmentContainer">20dp</dimen>
-    <dimen name="layoutHeight">50dp</dimen>
-</resources>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="marginFragmentContainer">20dp</dimen>
-    <dimen name="layoutHeight">50dp</dimen>
+    <dimen name="textViewWidth">196dp</dimen>
+    <dimen name="textViewHeight">67dp</dimen>
+    <dimen name="textViewSize">18sp</dimen>
+    <dimen name="buttonMarginStart">159dp</dimen>
+    <dimen name="buttonMarginTop">368dp</dimen>
+    <dimen name="buttonMarginEnd">159dp</dimen>
+    <dimen name="buttonMarginBottom">315dp</dimen>
 </resources>
