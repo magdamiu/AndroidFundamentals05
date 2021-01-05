@@ -12,10 +12,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.android.androidfundamentalsgroup1.R.string.error_getting_users;
+import static com.android.androidfundamentalsgroup1.R.string.github_users;
 
 public class GithubActivity extends AppCompatActivity {
 
+    private static final String GITHUB_TOKEN = "70157a771d9d5dcd26323eb8334615fcc2ba2192";
+
     private UsersRepository usersRepository;
+    private IssuesRepository issuesRepository;
+
     private List<User> users;
 
     @Override
@@ -26,7 +31,14 @@ public class GithubActivity extends AppCompatActivity {
         usersRepository = UsersRepository.getInstance();
         users = new ArrayList<>();
 
-        getDataSource();
+        Issue issue = new Issue();
+        issue.setTitle("This is a test #1");
+        issue.setBody("Post an issue from code :) ");
+        // replace username with your username and repo with a repo name of yours
+        String token = "token " + GITHUB_TOKEN;
+        postIssue("magdamiu", "AndroidFundamentals05", token, issue);
+
+        //getDataSource();
     }
 
     private void getDataSource() {
@@ -49,5 +61,25 @@ public class GithubActivity extends AppCompatActivity {
                         Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    private void postIssue(String user, String repo, String token, Issue issue) {
+        issuesRepository = IssuesRepository.getInstance();
+
+        issuesRepository.postIssue(new OnPostIssueCallback() {
+            @Override
+            public void onSuccess(Issue issueResult) {
+                Logging.show("Github issue = ", issueResult.toString());
+                Toast.makeText(GithubActivity.this, issueResult.toString(), Toast.LENGTH_LONG)
+                        .show();
+            }
+
+            @Override
+            public void onError() {
+                Logging.show("error Github post issue = ", "check the code :D ");
+                Toast.makeText(GithubActivity.this, "error posting an issue",
+                        Toast.LENGTH_LONG).show();
+            }
+        }, user, repo, token, issue);
     }
 }
