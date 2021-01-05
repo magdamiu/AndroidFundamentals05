@@ -70,4 +70,5 @@
     <string name="errorgithub_users">\"error Github users = \"</string>
     <string name="check_code">\"check the code :D \"</string>
     <string name="error_getting_users">error getting the Github users</string>
+    <string name="saved_version_api">savedVersion=</string>
 </resources>

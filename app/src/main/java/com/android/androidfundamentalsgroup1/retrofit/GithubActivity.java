@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import com.android.androidfundamentalsgroup1.Logging;
 import com.android.androidfundamentalsgroup1.R;
+import com.android.androidfundamentalsgroup1.store_data.ApplicationData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +18,7 @@ import static com.android.androidfundamentalsgroup1.R.string.github_users;
 public class GithubActivity extends AppCompatActivity {
 
     private static final String GITHUB_TOKEN = "70157a771d9d5dcd26323eb8334615fcc2ba2192";
+    private static final String VERSION_API = "VERSION_API";
 
     private UsersRepository usersRepository;
     private IssuesRepository issuesRepository;
@@ -30,6 +32,10 @@ public class GithubActivity extends AppCompatActivity {
 
         usersRepository = UsersRepository.getInstance();
         users = new ArrayList<>();
+
+        ApplicationData.setIntValueInSharedPreferences(GithubActivity.this, VERSION_API, 1);
+        int savedVersion = ApplicationData.getIntValueFromSharedPreferences(GithubActivity.this, VERSION_API);
+        Logging.show(getString(R.string.saved_version_api), savedVersion + "");
 
         Issue issue = new Issue();
         issue.setTitle("This is a test #1");
