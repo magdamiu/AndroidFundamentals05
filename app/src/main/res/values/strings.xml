@@ -62,4 +62,12 @@
     <string name="error_occured">Error</string>
     <string name="retry">Retry</string>
     <string name="retry_message">Please try again</string>
+    <string name="permission_camera_ok">You have permission to use CAMERA</string>
+    <string name="yey_success_access_camera">YEY! We are good...</string>
+    <string name="no_access_to_camera">Noooo...not ok...</string>
+    <string name="retrofit_sample">Retrofit Sample</string>
+    <string name="github_users">\"Github users = \"</string>
+    <string name="errorgithub_users">\"error Github users = \"</string>
+    <string name="check_code">\"check the code :D \"</string>
+    <string name="error_getting_users">error getting the Github users</string>
 </resources>

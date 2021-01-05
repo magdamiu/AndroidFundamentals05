@@ -33,6 +33,6 @@
         android:tint="@android:color/holo_blue_dark"
         app:rippleColor="@color/colorPrimaryDark"
         app:fabSize="auto"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@drawable/ic_baseline_signal_wifi_4_bar_24" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

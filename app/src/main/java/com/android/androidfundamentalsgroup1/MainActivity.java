@@ -28,6 +28,7 @@ import com.android.androidfundamentalsgroup1.activities.SecondActivity;
 import com.android.androidfundamentalsgroup1.fragments.SumActivity;
 import com.android.androidfundamentalsgroup1.recycler_view.Email;
 import com.android.androidfundamentalsgroup1.recycler_view.EmailAdapter;
+import com.android.androidfundamentalsgroup1.retrofit.GithubActivity;
 import com.android.androidfundamentalsgroup1.styles.StyleSamplesActivity;
 
 import java.util.ArrayList;
@@ -289,7 +290,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == REQUEST_CODE_MESSAGE && resultCode == RESULT_OK) {
+        if (requestCode == REQUEST_CODE_MESSAGE && resultCode == RESULT_OK) {
             String result = data.getStringExtra(MESSAGE_KEY);
             Logging.show(TAG, result);
         }
@@ -312,6 +313,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void buttonOpenStyleActivityOnClick(View view) {
         Intent formActivity = new Intent(MainActivity.this, StyleSamplesActivity.class);
+        startActivity(formActivity);
+    }
+
+    public void buttonRetrofitSampleOnClick(View view) {
+        Intent formActivity = new Intent(MainActivity.this, GithubActivity.class);
         startActivity(formActivity);
     }
 }
