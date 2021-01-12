@@ -29,6 +29,7 @@ import com.android.androidfundamentalsgroup1.fragments.SumActivity;
 import com.android.androidfundamentalsgroup1.recycler_view.Email;
 import com.android.androidfundamentalsgroup1.recycler_view.EmailAdapter;
 import com.android.androidfundamentalsgroup1.retrofit.GithubActivity;
+import com.android.androidfundamentalsgroup1.room.WordsActivity;
 import com.android.androidfundamentalsgroup1.styles.StyleSamplesActivity;
 
 import java.util.ArrayList;
@@ -318,6 +319,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void buttonRetrofitSampleOnClick(View view) {
         Intent formActivity = new Intent(MainActivity.this, GithubActivity.class);
+        startActivity(formActivity);
+    }
+
+    public void buttonRoomSampleOnClick(View view) {
+        Intent formActivity = new Intent(MainActivity.this, WordsActivity.class);
         startActivity(formActivity);
     }
 }

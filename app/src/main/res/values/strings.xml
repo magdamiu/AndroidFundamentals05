@@ -76,4 +76,5 @@
     <string name="hint_word">Word</string>
     <string name="button_save">Save</string>
     <string name="empty_not_saved">not saved</string>
+    <string name="room_sample">Room Sample</string>
 </resources>
