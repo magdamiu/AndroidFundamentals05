@@ -71,4 +71,9 @@
     <string name="check_code">\"check the code :D \"</string>
     <string name="error_getting_users">error getting the Github users</string>
     <string name="saved_version_api">savedVersion=</string>
+    <string name="add_word">Add word</string>
+    <string name="no_word">No Word</string>
+    <string name="hint_word">Word</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">not saved</string>
 </resources>

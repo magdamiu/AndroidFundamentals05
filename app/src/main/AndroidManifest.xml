@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".retrofit.GithubActivity"></activity>
+        <activity android:name=".room.NewWordActivity"></activity>
+        <activity android:name=".room.WordsActivity" />
+        <activity android:name=".retrofit.GithubActivity" />
         <activity android:name=".styles.StyleSamplesActivity" />
         <activity
             android:name=".NavigationActivity"
