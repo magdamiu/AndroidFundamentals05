@@ -17,7 +17,7 @@ import static com.android.androidfundamentalsgroup1.R.string.github_users;
 
 public class GithubActivity extends AppCompatActivity {
 
-    private static final String GITHUB_TOKEN = "70157a771d9d5dcd26323eb8334615fcc2ba2192";
+    private static final String GITHUB_TOKEN = "";
     private static final String VERSION_API = "VERSION_API";
 
     private UsersRepository usersRepository;
