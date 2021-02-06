@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/extra_large_size"
+        android:background="@color/android_blue"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text_size"
+        android:text="@string/android_text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/extra_large_size"
+        android:gravity="fill"
+        android:text="LOGIN"
+        android:textColor="@color/login_color"
+        android:textSize="@dimen/login_text_size"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/email_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/extra_large_size"
+        android:hint="@string/email_text"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/phone_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/extra_large_size"
+        android:hint="@string/phone_text"
+        android:inputType="phone"/>
+    <CheckBox
+        android:id="@+id/checkbox_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/extra_large_size"
+        android:text="@string/checkbox_text">
+
+    </CheckBox>
+
+    <Button
+        android:id="@+id/button_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/extra_large_size"
+        android:text="@string/button_text">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/extra_large_size"
+        android:hint="@string/result_text"
+        android:gravity="center"/>
+
+
+
+
+
+</LinearLayout>
