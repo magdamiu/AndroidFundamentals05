@@ -25,5 +25,11 @@ public class MainActivity extends AppCompatActivity {
         } else if (countStudents % 3 == 0) {
             Log.i("MainActivity", "numar divizibil cu 3");
         }
+
+        try {
+            int a = 1/0;
+        } catch (RuntimeException e) {
+            Log.e("my_custom_alpha_message", e.getMessage());
+        }
     }
 }
